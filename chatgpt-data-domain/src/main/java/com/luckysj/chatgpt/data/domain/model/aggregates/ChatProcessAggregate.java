@@ -28,6 +28,4 @@ public class ChatProcessAggregate {
     /** 问题描述 */
     private List<MessageEntity> messages;
 
-
-
 }

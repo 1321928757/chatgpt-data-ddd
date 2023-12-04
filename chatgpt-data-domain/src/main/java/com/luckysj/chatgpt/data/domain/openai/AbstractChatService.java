@@ -25,7 +25,7 @@ public abstract class AbstractChatService implements IChatService{
     public ResponseBodyEmitter completions(ChatProcessAggregate chatProcess) {
         // 1.权限校验
         String token = chatProcess.getToken();
-        if(!token.equals("test")){
+        if(!token.equals("Bearer test")){
             throw new ChatGPTException(Constants.ResponseCode.TOKEN_ERROR.getCode(), Constants.ResponseCode.TOKEN_ERROR.getInfo());
         }
 
