@@ -1,0 +1,25 @@
+server:
+  port: 80
+
+# 应用配置
+app:
+  config:
+    # 版本，方便通过接口版本升级
+    api-version: v1
+    # 跨域，开发阶段可以设置为 * 不限制
+    cross-origin: https://itedus.cn
+
+# ChatGPT SDK Config
+chatgpt:
+  sdk:
+    config:
+      # 官网地址 https://api.openai.com/
+      api-host: https://api.openai.com/
+      # 官网申请 https://platform.openai.com/account/api-keys
+      api-key: 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
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml

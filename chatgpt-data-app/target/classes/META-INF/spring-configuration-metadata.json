@@ -1,0 +1,69 @@
+{
+  "groups": [
+    {
+      "name": "chatgpt.sdk.config",
+      "type": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties"
+    },
+    {
+      "name": "thread.pool.executor.config",
+      "type": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "chatgpt.sdk.config.api-host",
+      "type": "java.lang.String",
+      "description": "openai 代理地址",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties"
+    },
+    {
+      "name": "chatgpt.sdk.config.api-key",
+      "type": "java.lang.String",
+      "description": "apikey，",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties"
+    },
+    {
+      "name": "chatgpt.sdk.config.auth-token",
+      "type": "java.lang.String",
+      "description": "验证tokne（这里暂时用不到，openai不需要，如果需要中转服务进行会话前认证可以使用该字段）",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties"
+    },
+    {
+      "name": "thread.pool.executor.config.block-queue-size",
+      "type": "java.lang.Integer",
+      "description": "最大队列数",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "defaultValue": 5000
+    },
+    {
+      "name": "thread.pool.executor.config.core-pool-size",
+      "type": "java.lang.Integer",
+      "description": "核心线程数",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "defaultValue": 20
+    },
+    {
+      "name": "thread.pool.executor.config.keep-alive-time",
+      "type": "java.lang.Long",
+      "description": "最大等待时间",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "defaultValue": 10
+    },
+    {
+      "name": "thread.pool.executor.config.max-pool-size",
+      "type": "java.lang.Integer",
+      "description": "最大线程数",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "defaultValue": 200
+    },
+    {
+      "name": "thread.pool.executor.config.policy",
+      "type": "java.lang.String",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "defaultValue": "AbortPolicy"
+    }
+  ],
+  "hints": []
+}

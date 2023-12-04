@@ -1,0 +1,97 @@
+23-12-04.19:15:49.445 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 3324 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:15:49.446 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:15:49.834 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:15:49.839 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:15:49.839 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:15:49.839 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:15:49.924 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:15:49.924 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 453 ms
+23-12-04.19:15:50.347 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:15:50.349 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+23-12-04.19:15:50.351 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:15:50.351 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+23-12-04.19:15:50.353 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8090"]
+23-12-04.19:15:50.353 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8090"]
+23-12-04.19:15:50.357 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23-12-04.19:15:50.368 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+23-12-04.19:16:10.908 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 26252 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:16:10.910 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:16:11.290 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:16:11.293 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:16:11.293 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:16:11.293 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:16:11.363 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:16:11.363 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 433 ms
+23-12-04.19:16:11.772 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:16:11.780 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+23-12-04.19:16:11.785 [main            ] INFO  Application            - Started Application in 1.123 seconds (JVM running for 1.581)
+23-12-04.19:22:31.703 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 25272 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:22:31.704 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:22:32.105 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:22:32.109 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:22:32.109 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:22:32.109 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:22:32.180 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:22:32.180 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 454 ms
+23-12-04.19:22:32.606 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:22:32.614 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+23-12-04.19:22:32.619 [main            ] INFO  Application            - Started Application in 1.169 seconds (JVM running for 1.624)
+23-12-04.19:22:53.685 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 9280 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:22:53.686 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:22:54.087 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:22:54.091 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:22:54.091 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:22:54.091 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:22:54.166 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:22:54.166 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 458 ms
+23-12-04.19:22:54.599 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:22:54.607 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+23-12-04.19:22:54.612 [main            ] INFO  Application            - Started Application in 1.182 seconds (JVM running for 1.63)
+23-12-04.19:24:58.745 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 26856 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:24:58.746 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:24:59.139 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:24:59.143 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:24:59.143 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:24:59.143 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:24:59.218 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:24:59.218 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 451 ms
+23-12-04.19:24:59.638 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:24:59.646 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+23-12-04.19:24:59.650 [main            ] INFO  Application            - Started Application in 1.172 seconds (JVM running for 1.621)
+23-12-04.19:25:19.026 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 25864 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:25:19.027 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:25:19.411 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:25:19.415 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:25:19.415 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:25:19.415 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:25:19.484 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:25:19.484 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 435 ms
+23-12-04.19:25:19.909 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:25:19.917 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+23-12-04.19:25:19.922 [main            ] INFO  Application            - Started Application in 1.151 seconds (JVM running for 1.597)
+23-12-04.19:25:29.885 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 4912 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-04.19:25:29.886 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-04.19:25:30.296 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+23-12-04.19:25:30.301 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+23-12-04.19:25:30.301 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-04.19:25:30.301 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-04.19:25:30.370 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-04.19:25:30.371 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 462 ms
+23-12-04.19:25:30.792 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+23-12-04.19:25:30.799 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+23-12-04.19:25:30.804 [main            ] INFO  Application            - Started Application in 1.202 seconds (JVM running for 1.646)

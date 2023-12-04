@@ -1,0 +1,15 @@
+23-12-04.19:15:50.349 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+23-12-04.19:15:50.368 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
