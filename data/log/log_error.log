@@ -1,54 +1,7 @@
-23-12-04.19:15:50.349 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
-23-12-04.19:15:50.368 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8090 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
-
-23-12-04.20:12:30.959 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-23-12-04.20:12:30.976 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' in your configuration.
-
-23-12-04.20:19:52.226 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-23-12-04.20:19:52.243 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' in your configuration.
-
-23-12-04.20:20:13.790 [http-nio-8090-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:49:17.470 [http-nio-7070-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,9 +52,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:20:13.793 [http-nio-8090-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:49:17.475 [http-nio-7070-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,10 +105,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.137 [http-nio-8090-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:50:52.574 [http-nio-7070-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,9 +159,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.138 [http-nio-8090-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:50:52.578 [http-nio-7070-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -259,10 +212,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.140 [http-nio-8090-exec-2] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:52:44.392 [http-nio-7070-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -313,9 +266,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.141 [http-nio-8090-exec-2] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:52:44.393 [http-nio-7070-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -366,10 +319,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.143 [http-nio-8090-exec-10] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:52:50.042 [http-nio-7070-exec-10] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -420,9 +373,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.143 [http-nio-8090-exec-10] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:52:50.043 [http-nio-7070-exec-10] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -473,10 +426,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.146 [http-nio-8090-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:54:04.756 [http-nio-7070-exec-9] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -527,9 +480,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.146 [http-nio-8090-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:54:31.955 [http-nio-7070-exec-9] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -580,10 +533,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.148 [http-nio-8090-exec-7] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:54:39.229 [http-nio-7070-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -634,9 +587,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.148 [http-nio-8090-exec-7] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:54:39.233 [http-nio-7070-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -687,10 +640,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.150 [http-nio-8090-exec-6] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:56:01.908 [http-nio-7070-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -741,9 +694,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.151 [http-nio-8090-exec-6] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:56:01.914 [http-nio-7070-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -794,10 +747,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:24.754 [http-nio-8090-exec-9] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
+23-12-08.16:56:49.212 [http-nio-7070-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -848,9 +801,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:24.754 [http-nio-8090-exec-9] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:56:49.219 [http-nio-7070-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -901,10 +854,10 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:36.524 [http-nio-8090-exec-8] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
+23-12-08.16:57:16.094 [http-nio-7070-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -955,9 +908,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:36.525 [http-nio-8090-exec-8] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:57:16.100 [http-nio-7070-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1008,4 +961,185 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:22:32.764 [http-nio-8090-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('m' (code 109)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('m' (code 109)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 3]]
+23-12-08.16:57:16.120 [http-nio-7070-exec-1] ERROR [localhost]            - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:271)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1187)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1009)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:456)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:427)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:373)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:237)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:319)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:164)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:469)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1431)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:775)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:739)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:723)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:566)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1246)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:398)
+	at org.apache.coyote.Response.action(Response.java:207)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 53 common frames omitted
+23-12-08.16:58:05.131 [http-nio-7070-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
+com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+23-12-08.16:58:05.133 [http-nio-7070-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)

@@ -1,178 +1,33 @@
-23-12-04.19:15:49.445 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 3324 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:15:49.446 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:15:49.834 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:15:49.839 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:15:49.839 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:15:49.839 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:15:49.924 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:15:49.924 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 453 ms
-23-12-04.19:15:50.347 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:15:50.349 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
-23-12-04.19:15:50.351 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:15:50.351 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-23-12-04.19:15:50.353 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8090"]
-23-12-04.19:15:50.353 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8090"]
-23-12-04.19:15:50.357 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-23-12-04.19:15:50.368 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8090 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
-
-23-12-04.19:16:10.908 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 26252 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:16:10.910 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:16:11.290 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:16:11.293 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:16:11.293 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:16:11.293 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:16:11.363 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:16:11.363 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 433 ms
-23-12-04.19:16:11.772 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:16:11.780 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.19:16:11.785 [main            ] INFO  Application            - Started Application in 1.123 seconds (JVM running for 1.581)
-23-12-04.19:22:31.703 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 25272 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:22:31.704 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:22:32.105 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:22:32.109 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:22:32.109 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:22:32.109 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:22:32.180 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:22:32.180 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 454 ms
-23-12-04.19:22:32.606 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:22:32.614 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.19:22:32.619 [main            ] INFO  Application            - Started Application in 1.169 seconds (JVM running for 1.624)
-23-12-04.19:22:53.685 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 9280 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:22:53.686 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:22:54.087 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:22:54.091 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:22:54.091 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:22:54.091 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:22:54.166 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:22:54.166 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 458 ms
-23-12-04.19:22:54.599 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:22:54.607 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.19:22:54.612 [main            ] INFO  Application            - Started Application in 1.182 seconds (JVM running for 1.63)
-23-12-04.19:24:58.745 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 26856 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:24:58.746 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:24:59.139 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:24:59.143 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:24:59.143 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:24:59.143 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:24:59.218 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:24:59.218 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 451 ms
-23-12-04.19:24:59.638 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:24:59.646 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.19:24:59.650 [main            ] INFO  Application            - Started Application in 1.172 seconds (JVM running for 1.621)
-23-12-04.19:25:19.026 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 25864 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:25:19.027 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:25:19.411 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:25:19.415 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:25:19.415 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:25:19.415 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:25:19.484 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:25:19.484 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 435 ms
-23-12-04.19:25:19.909 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:25:19.917 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.19:25:19.922 [main            ] INFO  Application            - Started Application in 1.151 seconds (JVM running for 1.597)
-23-12-04.19:25:29.885 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 4912 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.19:25:29.886 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.19:25:30.296 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.19:25:30.301 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.19:25:30.301 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.19:25:30.301 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.19:25:30.370 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.19:25:30.371 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 462 ms
-23-12-04.19:25:30.792 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.19:25:30.799 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.19:25:30.804 [main            ] INFO  Application            - Started Application in 1.202 seconds (JVM running for 1.646)
-23-12-04.20:11:29.126 [http-nio-8090-exec-3] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23-12-04.20:11:29.126 [http-nio-8090-exec-3] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-23-12-04.20:11:29.127 [http-nio-8090-exec-3] INFO  DispatcherServlet      - Completed initialization in 1 ms
-23-12-04.20:12:30.451 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 9148 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.20:12:30.452 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.20:12:30.856 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.20:12:30.860 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.20:12:30.860 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.20:12:30.860 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.20:12:30.930 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.20:12:30.930 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 456 ms
-23-12-04.20:12:30.959 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-23-12-04.20:12:30.959 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-23-12-04.20:12:30.966 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-23-12-04.20:12:30.976 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' in your configuration.
-
-23-12-04.20:19:51.698 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 7736 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.20:19:51.700 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.20:19:52.109 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.20:19:52.112 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.20:19:52.113 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.20:19:52.113 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.20:19:52.194 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.20:19:52.194 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
-23-12-04.20:19:52.226 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-23-12-04.20:19:52.227 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-23-12-04.20:19:52.233 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-23-12-04.20:19:52.243 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.luckysj.chatgpt.data.domain.openai.IChatService' in your configuration.
-
-23-12-04.20:20:07.755 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 26320 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.20:20:07.756 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.20:20:08.182 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.20:20:08.186 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.20:20:08.186 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.20:20:08.186 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.20:20:08.263 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.20:20:08.263 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 486 ms
-23-12-04.20:20:08.690 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.20:20:08.699 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.20:20:08.703 [main            ] INFO  Application            - Started Application in 1.204 seconds (JVM running for 1.671)
-23-12-04.20:20:13.698 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23-12-04.20:20:13.698 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-23-12-04.20:20:13.699 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
-23-12-04.20:20:13.787 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:20:13.790 [http-nio-8090-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:25:33.840 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 5152 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:25:33.841 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:25:34.339 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:25:34.344 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:25:34.344 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:25:34.344 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:25:34.856 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:25:34.857 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 991 ms
+23-12-08.16:25:35.541 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:25:35.549 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:25:35.554 [main            ] INFO  Application            - Started Application in 2.002 seconds (JVM running for 2.562)
+23-12-08.16:46:41.963 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 17736 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:46:41.964 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:46:42.412 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:46:42.416 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:46:42.416 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:46:42.416 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:46:42.496 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:46:42.496 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 512 ms
+23-12-08.16:46:43.152 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:46:43.160 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:46:43.165 [main            ] INFO  Application            - Started Application in 1.458 seconds (JVM running for 1.957)
+23-12-08.16:47:51.035 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.16:47:51.035 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.16:47:51.036 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.16:49:17.457 [http-nio-7070-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:49:17.470 [http-nio-7070-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -223,9 +78,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:20:13.793 [http-nio-8090-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:49:17.475 [http-nio-7070-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -276,11 +131,25 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.137 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:15.137 [http-nio-8090-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:50:31.169 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 7880 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:50:31.170 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:50:31.672 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:50:31.677 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:50:31.677 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:50:31.677 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:50:31.757 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:50:31.757 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 562 ms
+23-12-08.16:50:32.540 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:50:32.550 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:50:32.555 [main            ] INFO  Application            - Started Application in 1.68 seconds (JVM running for 3.006)
+23-12-08.16:50:33.897 [http-nio-7070-exec-3] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.16:50:33.897 [http-nio-7070-exec-3] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.16:50:33.898 [http-nio-7070-exec-3] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.16:50:52.558 [http-nio-7070-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:50:52.574 [http-nio-7070-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -331,9 +200,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.138 [http-nio-8090-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:50:52.578 [http-nio-7070-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -384,11 +253,11 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.140 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:15.140 [http-nio-8090-exec-2] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:52:44.392 [http-nio-7070-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:52:44.392 [http-nio-7070-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -439,9 +308,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.141 [http-nio-8090-exec-2] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:52:44.393 [http-nio-7070-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -492,11 +361,11 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.143 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:15.143 [http-nio-8090-exec-10] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:52:50.042 [http-nio-7070-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:52:50.042 [http-nio-7070-exec-10] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -547,9 +416,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.143 [http-nio-8090-exec-10] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:52:50.043 [http-nio-7070-exec-10] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -600,11 +469,11 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.146 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:15.146 [http-nio-8090-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:53:11.298 [http-nio-7070-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:54:04.756 [http-nio-7070-exec-9] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -655,9 +524,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.146 [http-nio-8090-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:54:31.955 [http-nio-7070-exec-9] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -708,11 +577,25 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.148 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:15.148 [http-nio-8090-exec-7] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:54:35.506 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 20116 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:54:35.508 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:54:36.027 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:54:36.032 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:54:36.032 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:54:36.032 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:54:36.117 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:54:36.117 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 585 ms
+23-12-08.16:54:36.929 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:54:36.939 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:54:36.944 [main            ] INFO  Application            - Started Application in 1.779 seconds (JVM running for 2.393)
+23-12-08.16:54:39.105 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.16:54:39.105 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.16:54:39.106 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.16:54:39.213 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:54:39.229 [http-nio-7070-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -763,9 +646,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.148 [http-nio-8090-exec-7] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:54:39.233 [http-nio-7070-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -816,11 +699,25 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.150 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ChatMindAi-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:15.150 [http-nio-8090-exec-6] ERROR ChatGPTAIServiceController - 流式应答，请求模型：ChatMindAi-3.5-turbo 发生异常
+23-12-08.16:55:55.103 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 5544 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:55:55.104 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:55:55.650 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:55:55.656 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:55:55.656 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:55:55.656 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:55:55.740 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:55:55.740 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 610 ms
+23-12-08.16:55:56.488 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:55:56.499 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:55:56.505 [main            ] INFO  Application            - Started Application in 1.723 seconds (JVM running for 2.35)
+23-12-08.16:55:57.517 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.16:55:57.518 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.16:55:57.518 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+23-12-08.16:55:57.626 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:56:01.908 [http-nio-7070-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -871,9 +768,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:15.151 [http-nio-8090-exec-6] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:56:01.914 [http-nio-7070-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -924,11 +821,25 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:24.754 [http-nio-8090-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:24.754 [http-nio-8090-exec-9] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
+23-12-08.16:56:07.624 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 10348 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:56:07.626 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:56:08.171 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:56:08.176 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:56:08.176 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:56:08.176 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:56:08.257 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:56:08.257 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 606 ms
+23-12-08.16:56:08.957 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:56:08.967 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:56:08.972 [main            ] INFO  Application            - Started Application in 1.678 seconds (JVM running for 2.291)
+23-12-08.16:56:09.013 [http-nio-7070-exec-3] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.16:56:09.013 [http-nio-7070-exec-3] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.16:56:09.014 [http-nio-7070-exec-3] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.16:56:09.117 [http-nio-7070-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:56:49.212 [http-nio-7070-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -979,9 +890,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:24.754 [http-nio-8090-exec-9] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:56:49.219 [http-nio-7070-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1032,11 +943,25 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:36.524 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:21:36.524 [http-nio-8090-exec-8] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
+23-12-08.16:56:51.677 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 1500 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:56:51.679 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:56:52.202 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:56:52.207 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:56:52.207 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:56:52.207 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:56:52.293 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:56:52.293 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 590 ms
+23-12-08.16:56:53.143 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:56:53.152 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:56:53.157 [main            ] INFO  Application            - Started Application in 1.792 seconds (JVM running for 2.43)
+23-12-08.16:56:53.374 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.16:56:53.374 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.16:56:53.374 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+23-12-08.16:56:53.480 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:57:16.094 [http-nio-7070-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.domain.openai.AbstractChatService.completions(AbstractChatService.java:29)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:71)
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1087,9 +1012,9 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:21:36.525 [http-nio-8090-exec-8] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+23-12-08.16:57:16.100 [http-nio-7070-exec-1] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
 com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:74)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1140,123 +1065,892 @@ com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-23-12-04.20:22:23.191 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 16080 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-23-12-04.20:22:23.193 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-23-12-04.20:22:23.598 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-23-12-04.20:22:23.602 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-23-12-04.20:22:23.603 [main            ] INFO  StandardService        - Starting service [Tomcat]
-23-12-04.20:22:23.603 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-23-12-04.20:22:23.673 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-23-12-04.20:22:23.673 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 458 ms
-23-12-04.20:22:24.091 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-23-12-04.20:22:24.097 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-23-12-04.20:22:24.103 [main            ] INFO  Application            - Started Application in 1.179 seconds (JVM running for 1.641)
-23-12-04.20:22:32.723 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23-12-04.20:22:32.724 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-23-12-04.20:22:32.724 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
-23-12-04.20:22:32.764 [http-nio-8090-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('m' (code 109)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('m' (code 109)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 3]]
-23-12-04.20:22:41.171 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:22:41.189 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
-23-12-04.20:22:41.189 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
-23-12-04.20:22:41.189 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
-23-12-04.20:22:41.189 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
-23-12-04.20:22:41.189 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1861ms)
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Mon, 04 Dec 2023 12:22:46 GMT
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 1039
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 199
-23-12-04.20:22:43.051 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 7m12s
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 05149218a32a339a96f93445db29ed44
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=f.9FrqMcqrITvGxHo860aAwfDsa_ZP.m__18rbl8Kcc-1701692566-0-AXez2akixOt/Gr2rJExNFz7wQxUC7j2GCIWEwdJY0Vwwun10rnVPMtJeCNCg1nCKK5ifeXSDYYQDL1zNUSQacSs=; path=/; expires=Mon, 04-Dec-23 12:52:46 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=fggjOH6IY9URxnqsMReOdnE.6VXw4iHNFm0cm.YJxBk-1701692566739-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 830404457d4a80b9-NRT
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
-23-12-04.20:22:43.052 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
-23-12-04.20:22:59.564 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
-23-12-04.20:24:03.235 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:24:03.238 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
-23-12-04.20:24:03.239 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
-23-12-04.20:24:03.239 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
-23-12-04.20:24:03.239 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
-23-12-04.20:24:03.239 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
-23-12-04.20:24:04.290 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1050ms)
-23-12-04.20:24:04.290 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
-23-12-04.20:24:04.290 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Mon, 04 Dec 2023 12:24:08 GMT
-23-12-04.20:24:04.290 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
-23-12-04.20:24:04.290 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
-23-12-04.20:24:04.291 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
-23-12-04.20:24:04.291 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
-23-12-04.20:24:04.291 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
-23-12-04.20:24:04.291 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 397
-23-12-04.20:24:04.291 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
-23-12-04.20:24:04.291 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
-23-12-04.20:24:04.292 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
-23-12-04.20:24:04.292 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
-23-12-04.20:24:04.292 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
-23-12-04.20:24:04.292 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 198
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 13m2.29s
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 6c7df72159f11c91a4829d1c9e337bd5
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=.5grLGCNh8zk0GVZ3ezAbmqJlCPvRK99nUMLY61rb6U-1701692647-0-AW+gvBmQFs9VekNnXifbkQ3HkJgwsSbZ/JWyyj1rnWSXfHwmjeObhcGa67HyOrDMpLhAMWF9ZOmMrQeB7tXk9EA=; path=/; expires=Mon, 04-Dec-23 12:54:07 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=sNZcn4Vxno8dPGoducGmqt1qY_FOP_5Lc6OjmSv8IJ4-1701692647986-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 830406445967e06a-NRT
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
-23-12-04.20:24:04.293 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
-23-12-04.20:24:42.564 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
-23-12-04.20:24:51.952 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
-23-12-04.20:24:51.957 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
-23-12-04.20:24:51.957 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
-23-12-04.20:24:51.957 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
-23-12-04.20:24:51.957 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
-23-12-04.20:24:51.957 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (637ms)
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Mon, 04 Dec 2023 12:24:56 GMT
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 209
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 197
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 19m25.581s
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: a9f715ee616b99f8c7866c86d5ac7c27
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=_WoGF40Es4Rms7y6JOec_Hpp4Jws87bASWUdljWT74o-1701692696-0-AYmmSaj4HpZrUgV2CdCkc5nZ037Bt105AXEAGEZKfhx8KXVkyFfRQj1imyrJX8L6GmkLoSdjeYheusu7dZaMCTQ=; path=/; expires=Mon, 04-Dec-23 12:54:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=Gt13LIIp9wPQL6OieCfp41lm6u.vux2ejIShqbgfJn4-1701692696283-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
-23-12-04.20:24:52.595 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 83040774bc9ce362-NRT
-23-12-04.20:24:52.596 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
-23-12-04.20:24:52.596 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
-23-12-04.20:24:52.596 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
-23-12-04.20:25:09.530 [http-nio-8090-exec-8] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.16:57:16.120 [http-nio-7070-exec-1] ERROR [localhost]            - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:271)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1187)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1009)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:456)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:427)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:373)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:237)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:319)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:164)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:469)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1431)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:775)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:739)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:723)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:566)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1246)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:398)
+	at org.apache.coyote.Response.action(Response.java:207)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 53 common frames omitted
+23-12-08.16:57:18.314 [http-nio-7070-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.16:58:05.131 [http-nio-7070-exec-3] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
+com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
+	at com.luckysj.chatgpt.data.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:50)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+23-12-08.16:58:05.133 [http-nio-7070-exec-3] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.luckysj.chatgpt.data.types.exception.ChatGPTException] with root cause
+com.luckysj.chatgpt.data.types.exception.ChatGPTException: null
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+23-12-08.16:59:14.622 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 7996 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:59:14.624 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:59:15.069 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:59:15.074 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:59:15.074 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:59:15.074 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:59:15.152 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:59:15.152 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 508 ms
+23-12-08.16:59:15.822 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:59:15.832 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:59:15.838 [main            ] INFO  Application            - Started Application in 1.48 seconds (JVM running for 1.968)
+23-12-08.16:59:37.768 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 17340 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.16:59:37.769 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.16:59:38.201 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.16:59:38.205 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.16:59:38.205 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.16:59:38.205 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.16:59:38.284 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.16:59:38.284 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 494 ms
+23-12-08.16:59:38.937 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.16:59:38.946 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.16:59:38.951 [main            ] INFO  Application            - Started Application in 1.442 seconds (JVM running for 1.968)
+23-12-08.17:00:05.665 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 3992 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:00:05.666 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:00:06.124 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:00:06.128 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:00:06.128 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:00:06.128 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:00:06.207 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:00:06.207 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 518 ms
+23-12-08.17:00:06.860 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:00:06.870 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:00:06.875 [main            ] INFO  Application            - Started Application in 1.491 seconds (JVM running for 2.038)
+23-12-08.17:01:19.706 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 16928 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:01:19.707 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:01:20.148 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:01:20.152 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:01:20.152 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:01:20.152 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:01:20.227 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:01:20.227 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 499 ms
+23-12-08.17:01:20.857 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:01:20.866 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:01:20.871 [main            ] INFO  Application            - Started Application in 1.424 seconds (JVM running for 1.907)
+23-12-08.17:03:47.343 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 6200 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:03:47.345 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:03:47.879 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:03:47.884 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:03:47.884 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:03:47.884 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:03:47.972 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:03:47.972 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 601 ms
+23-12-08.17:03:48.735 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:03:48.744 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:03:48.750 [main            ] INFO  Application            - Started Application in 1.728 seconds (JVM running for 2.36)
+23-12-08.17:03:49.247 [http-nio-7070-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:03:49.247 [http-nio-7070-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:03:49.248 [http-nio-7070-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:03:49.363 [http-nio-7070-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.17:04:47.807 [http-nio-7070-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:04:52.355 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 12248 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:04:52.356 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:04:52.788 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:04:52.792 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:04:52.792 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:04:52.792 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:04:52.861 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:04:52.861 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 485 ms
+23-12-08.17:04:53.542 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:04:53.551 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:04:53.555 [main            ] INFO  Application            - Started Application in 1.457 seconds (JVM running for 1.947)
+23-12-08.17:04:55.945 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:04:55.945 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:04:55.947 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+23-12-08.17:04:56.034 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.17:04:56.072 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://www.openai-proxy.com/v1/chat/completions
+23-12-08.17:04:56.073 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:04:56.073 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:04:56.073 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:04:56.073 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:04:56.447 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - <-- 404 https://www.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (374ms)
+23-12-08.17:04:56.447 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:04:56.448 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:05:03 GMT
+23-12-08.17:04:56.448 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/html
+23-12-08.17:04:56.448 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - content-length: 150
+23-12-08.17:04:56.448 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:05:36.758 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 13396 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:05:36.760 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:05:37.309 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:05:37.315 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:05:37.315 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:05:37.316 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:05:37.409 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:05:37.409 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 625 ms
+23-12-08.17:05:38.172 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:05:38.182 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:05:38.188 [main            ] INFO  Application            - Started Application in 1.756 seconds (JVM running for 2.383)
+23-12-08.17:05:41.698 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:05:41.698 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:05:41.699 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:05:41.804 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.17:05:41.849 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://www.openai-proxy.com/v1/chat/completions
+23-12-08.17:05:41.849 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:05:41.849 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:05:41.849 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:05:41.849 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:05:42.310 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - <-- 404 https://www.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (461ms)
+23-12-08.17:05:42.311 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:05:42.311 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:05:49 GMT
+23-12-08.17:05:42.311 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/html
+23-12-08.17:05:42.311 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - content-length: 150
+23-12-08.17:05:42.311 [OkHttp https://www.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:06:56.130 [http-nio-7070-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:06:58.508 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 6296 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:06:58.510 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:06:59.017 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:06:59.021 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:06:59.022 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:06:59.022 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:06:59.106 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:06:59.106 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 571 ms
+23-12-08.17:06:59.833 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:06:59.843 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:06:59.849 [main            ] INFO  Application            - Started Application in 1.651 seconds (JVM running for 2.287)
+23-12-08.17:07:05.424 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:07:05.424 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:07:05.425 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:07:05.539 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+23-12-08.17:07:05.586 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:07:05.587 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:07:05.587 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:07:05.587 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:07:05.587 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1294ms)
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:07:14 GMT
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 398
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:07:06.881 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 199
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 7m12s
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 0fe38b01e9c5599975b5c16a4c137115
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=PvrLyMKisb1IZyPZekQ9PZnM70_RphUsomqqB9MHJyc-1702026434-0-AYFj6zqG2gqYef7ANBieHEpJubMsFkht6DiACUOFxUqthqrWSPNfur6et7/Ze1D1azICl0SFjK6uGTeHKpjbQ9I=; path=/; expires=Fri, 08-Dec-23 09:37:14 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=mPo.eImheEHdpFeWyLJ2V_rxoQ2tNYCVeniYTRRwhHQ-1702026434125-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323db587eaff6b9-NRT
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:07:06.882 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:07:21.800 [http-nio-7070-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:08:44.598 [http-nio-7070-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"移动电话","role":"user"}]
+23-12-08.17:08:44.599 [http-nio-7070-exec-6] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+23-12-08.17:08:44.599 [http-nio-7070-exec-6] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+23-12-08.17:08:44.604 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:08:44.604 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:08:44.604 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 146
+23-12-08.17:08:44.604 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:08:44.604 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:08:45.402 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (797ms)
+23-12-08.17:08:45.402 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:08:45.402 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:08:52 GMT
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 305
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 198
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39983
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39983
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 12m45.326s
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 25ms
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 25ms
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: db668791ffb645cc865d7785e2ad2875
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=6b1S9KTg8v1ByTMmcOX3AACbgjsm5byV5m3UMKwOnDk-1702026532-0-AVLhGXwp8+qjU2GGm18V93UQicyYxgUkmvy+gwOpVUrFP3xh5tMuKmczW1/+gz6MiO84q5N+XazeRrN+UY28U+0=; path=/; expires=Fri, 08-Dec-23 09:38:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=dotRz_UyOBml2.Sf.AIgFofgy3wHPoCTOXYYhuWyql0-1702026532636-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323ddc13e1ef6e1-NRT
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:08:45.403 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:08:46.731 [http-nio-7070-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:10:19.675 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 10120 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:10:19.677 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:10:20.193 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:10:20.197 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:10:20.198 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:10:20.198 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:10:20.291 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:10:20.292 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 590 ms
+23-12-08.17:10:21.121 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:10:21.132 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:10:21.139 [main            ] INFO  Application            - Started Application in 1.77 seconds (JVM running for 2.374)
+23-12-08.17:10:23.976 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:10:23.977 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:10:23.977 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+23-12-08.17:10:24.085 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"移动电话","role":"user"}]
+23-12-08.17:10:24.107 [http-nio-7070-exec-1] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+23-12-08.17:10:24.107 [http-nio-7070-exec-1] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+23-12-08.17:10:24.107 [http-nio-7070-exec-1] INFO  SensitiveWordFilter    - 检测到敏感词，脱敏过后的内容为：
+23-12-08.17:10:24.129 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:10:24.129 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:10:24.129 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 146
+23-12-08.17:10:24.129 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:10:24.129 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1091ms)
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:10:32 GMT
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:10:25.221 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 332
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 197
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39983
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39983
+23-12-08.17:10:25.222 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 18m17.482s
+23-12-08.17:10:25.224 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 25ms
+23-12-08.17:10:25.224 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 25ms
+23-12-08.17:10:25.224 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 412e028cdcd2d983f257edf361e77fdc
+23-12-08.17:10:25.224 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:10:25.224 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=3NFZ7BChF.tc1tR7Z7zaMY8SrELmvWihKjlpg.oOfb4-1702026632-0-AUVkk8RntOPMw8WPuQ+pfnB6pG/LPMv2R3StNZr5cGwrseqpBvzghi4dIQk+6VGGN9I3bbnzvUa22aSzJJPTx08=; path=/; expires=Fri, 08-Dec-23 09:40:32 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:10:25.224 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=Lcfoe7CaGYNc71LBoi3RcJ0Tj.R8wO__5blt6lUxsWA-1702026632493-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:10:25.225 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323e0313e23af85-NRT
+23-12-08.17:10:25.225 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:10:25.225 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:10:25.225 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:10:26.505 [http-nio-7070-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:10:37.375 [http-nio-7070-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"移动电话哈哈哈","role":"user"}]
+23-12-08.17:10:37.376 [http-nio-7070-exec-3] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+23-12-08.17:10:37.376 [http-nio-7070-exec-3] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+23-12-08.17:10:37.376 [http-nio-7070-exec-3] INFO  SensitiveWordFilter    - 检测到敏感词，脱敏过后的内容为：哈哈哈
+23-12-08.17:10:37.381 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:10:37.381 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:10:37.381 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 155
+23-12-08.17:10:37.381 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:10:37.381 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:10:38.214 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (833ms)
+23-12-08.17:10:38.214 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:10:38.214 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:10:45 GMT
+23-12-08.17:10:38.214 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:10:38.214 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 331
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 196
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39980
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39980
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 25m16.571s
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 30ms
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 30ms
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 21832675cad00a43808d2e8f45b5b613
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=hx_tXDXjg_Lx_6lGBne5MShQBUy8wKhhd07QC0nQArU-1702026645-0-ARImGgc5/HOgl3Jc5TGbRGS5rjeL1L4BZT7Ychf4bfA5Sq63D8Pg53XWBCPVQdEfDsha2tF5XQNXIAwLORx+28U=; path=/; expires=Fri, 08-Dec-23 09:40:45 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=oUN3Cd8h7FMjc0ZjGIK0Hf36lr.epN951nWTPKLWzuA-1702026645477-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323e081fb76263e-NRT
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:10:38.215 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:10:39.422 [http-nio-7070-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:22:10.078 [http-nio-7070-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:22:10.079 [http-nio-7070-exec-5] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+23-12-08.17:22:10.079 [http-nio-7070-exec-5] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+23-12-08.17:22:10.079 [http-nio-7070-exec-5] INFO  SensitiveWordFilter    - 检测到敏感词，脱敏过后的内容为：敏感词测试：，
+23-12-08.17:22:10.083 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:22:10.083 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:22:10.083 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 167
+23-12-08.17:22:10.083 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:22:10.083 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1398ms)
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:22:18 GMT
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 622
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 197
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39977
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39977
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 20m55.621s
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 34ms
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 34ms
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 61bc89320072a78cc97adf2ff17f0ee4
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=xCZp5U4ze6PG4Ym9UpiBjSkftPHtBLMVOuVHYBxe_xE-1702027338-0-Afrrt3EL9CmvPtCQkDQHsBcLzENvR5JQq3wYzt3XgNjSm6qV6Mv49hSMGJkf0RbAiLNp9q0Xy58utmoZplcXjSY=; path=/; expires=Fri, 08-Dec-23 09:52:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:22:11.482 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=C.7kHH9LPcHjFwe12AQtr4qMyC6CF2aUHCsHSGx9ny0-1702027338736-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:22:11.483 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323f16cce7a7828-NRT
+23-12-08.17:22:11.483 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:22:11.483 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:22:11.483 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:22:12.324 [http-nio-7070-exec-6] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:23:38.446 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 10100 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:23:38.447 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:23:38.946 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:23:38.950 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:23:38.951 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:23:38.951 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:23:39.031 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:23:39.031 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 559 ms
+23-12-08.17:23:39.771 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:23:39.781 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:23:39.786 [main            ] INFO  Application            - Started Application in 1.65 seconds (JVM running for 2.255)
+23-12-08.17:23:40.471 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:23:40.471 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:23:40.472 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:23:40.581 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:23:40.625 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:23:40.625 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:23:40.625 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:23:40.625 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:23:40.625 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1268ms)
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:23:49 GMT
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 558
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 196
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 26m36.977s
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 3d4ebbee8ee2fecbec0a526ab3326bbe
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=4BPDatxMw2uh1cl6s0nog7Q9LAnG6mpjsIZ2T3LRLwk-1702027429-0-AWshGqTNgG+xgKR4/3d+4aHa3Knq7QiFMiwMrG+G8E3TkEh5V5uvqoZ829zONVVCE8S5Bh6GR6Sx/ZFGpdXp/dw=; path=/; expires=Fri, 08-Dec-23 09:53:49 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=Ug4g.zek3urba6PC0BcuHwKm.8IVawgoncWdC0p0q5s-1702027429157-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323f3a3498a1d8b-NRT
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:23:41.893 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:23:42.497 [http-nio-7070-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:23:51.174 [http-nio-7070-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:23:51.177 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:23:51.177 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:23:51.177 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:23:51.177 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:23:51.177 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:23:51.885 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (707ms)
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:23:59 GMT
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 273
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:23:51.886 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:23:51.887 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 195
+23-12-08.17:23:51.887 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
+23-12-08.17:23:51.887 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 33m38.749s
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 5c317d3bb566723070b98db8516e840d
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=iA4DdYglt9PP96jFEoODCaYKhxZUGBobFTIIAup3vSY-1702027439-0-AZhr/F8SF+xJNBGuh0IbFYbTBXqq+mR1g3LLIyScFFjymr+2gA4dOhX59JaKALA5hgJFiUEkS/VoQkdJAs0ZOHc=; path=/; expires=Fri, 08-Dec-23 09:53:59 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=Tct9Deg78OR2i5JMiwISVOn0ChpARIN29K1EmeZ_pXI-1702027439150-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323f3e31cff3493-NRT
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:23:51.888 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:23:52.569 [http-nio-7070-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:24:13.220 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 12156 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:24:13.222 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:24:13.738 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:24:13.743 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:24:13.744 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:24:13.744 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:24:13.832 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:24:13.832 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 586 ms
+23-12-08.17:24:14.594 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:24:14.605 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:24:14.611 [main            ] INFO  Application            - Started Application in 1.733 seconds (JVM running for 2.347)
+23-12-08.17:24:17.052 [http-nio-7070-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:24:17.052 [http-nio-7070-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:24:17.053 [http-nio-7070-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:24:17.163 [http-nio-7070-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:24:17.207 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:24:17.207 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:24:17.207 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:24:17.207 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:24:17.207 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:24:18.471 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1263ms)
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:24:25 GMT
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 376
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 194
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 40m24.372s
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 73b170b464d457493e2805b27b8ac443
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=SJcaIsCGjCUWWKXxI.CABP6Z34cdpwW35RKuVn2UInY-1702027465-0-AfMO1aQTBu7PvC3sTzYTN0vxhr+kdNnxwqUO0CC2IS8zHd1s1urugy+RlG/PKCnOTRq9Im2TJMWD9mjr2EaNZy8=; path=/; expires=Fri, 08-Dec-23 09:54:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=lxg70OymwA2e91828KTVBFKULc1Jo5NyK3Vff_jipRE-1702027465727-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323f4880b4be072-NRT
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:24:18.472 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:24:19.277 [http-nio-7070-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:26:00.962 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 4760 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:26:00.963 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:26:01.504 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:26:01.509 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:26:01.509 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:26:01.509 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:26:01.592 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:26:01.593 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+23-12-08.17:26:02.373 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:26:02.383 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:26:02.388 [main            ] INFO  Application            - Started Application in 1.733 seconds (JVM running for 2.334)
+23-12-08.17:26:03.076 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:26:03.076 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:26:03.077 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:26:03.191 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:26:03.215 [http-nio-7070-exec-1] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+23-12-08.17:26:03.215 [http-nio-7070-exec-1] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+23-12-08.17:26:03.238 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:26:03.238 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:26:03.238 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 167
+23-12-08.17:26:03.238 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:26:03.238 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:26:05.299 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2060ms)
+23-12-08.17:26:05.299 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:26:05.299 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:26:12 GMT
+23-12-08.17:26:05.299 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 1275
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 193
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39977
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39977
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 45m50.405s
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 34ms
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 34ms
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 03ed50e9faab44d30e975f6ffadef43f
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=L65WBsBmkjZwa4eJj8.QHhGv9kfGdDHEjRC3XnM3v6Y-1702027572-0-AbJHWY/r9VKCWH3SDRAYZ/dYz4ddgykcsQr0GwOQcOZSAMqaGrL2xube6+HBvkcCRtBa41Ryx2Nu8mqZqz5L4/w=; path=/; expires=Fri, 08-Dec-23 09:56:12 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=I41WRANRYENJCDXqWp9tP_MLAsk40I5DymE5hE1bQ_o-1702027572556-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323f71e5dd42614-NRT
+23-12-08.17:26:05.300 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:26:05.301 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:26:05.301 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:26:06.181 [http-nio-7070-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:26:58.194 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 18900 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:26:58.196 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:26:58.723 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:26:58.728 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:26:58.728 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:26:58.729 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:26:58.809 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:26:58.809 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 588 ms
+23-12-08.17:26:59.534 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:26:59.544 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:26:59.549 [main            ] INFO  Application            - Started Application in 1.676 seconds (JVM running for 2.313)
+23-12-08.17:27:02.129 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:27:02.129 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:27:02.130 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:27:02.238 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:27:02.259 [http-nio-7070-exec-1] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+23-12-08.17:27:02.259 [http-nio-7070-exec-1] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+23-12-08.17:27:02.282 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:27:02.282 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:27:02.282 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 167
+23-12-08.17:27:02.282 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:27:02.282 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1523ms)
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:27:11 GMT
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:27:03.805 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 658
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 192
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39977
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39977
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 52m3.31s
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 34ms
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 34ms
+23-12-08.17:27:03.806 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: d22b3429de92d3399bb93658c6f96b97
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=BL.El.rUw49k8SRB.yMB_m29QZmhbawTajwmMHJrjk0-1702027631-0-AWo3AMlMQADsnRDlVWcH2gU6u5flhP32xE5ZT68Lr8hev4e95v4ijpEjCUrRx+WB2+mhGzZPqVHNLrP6Nn8ha1Q=; path=/; expires=Fri, 08-Dec-23 09:57:11 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=MXN0rkAlkZ82YgCm1nwLXmzH6FY.UjbFyAlT3ou3O.8-1702027631071-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323f88fbd15262c-NRT
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:27:03.807 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:27:04.604 [http-nio-7070-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:30:55.602 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 22052 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:30:55.603 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:30:56.148 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:30:56.152 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:30:56.153 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:30:56.153 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:30:56.239 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:30:56.239 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 606 ms
+23-12-08.17:30:56.989 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:30:57.001 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:30:57.007 [main            ] INFO  Application            - Started Application in 1.742 seconds (JVM running for 2.369)
+23-12-08.17:31:08.255 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 9032 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:31:08.257 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:31:08.769 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:31:08.773 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:31:08.774 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:31:08.774 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:31:08.854 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:31:08.855 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 573 ms
+23-12-08.17:31:09.601 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:31:09.611 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:31:09.616 [main            ] INFO  Application            - Started Application in 1.69 seconds (JVM running for 2.352)
+23-12-08.17:31:09.985 [http-nio-7070-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:31:09.985 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:31:09.985 [http-nio-7070-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+23-12-08.17:31:10.097 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：电话，移动","role":"user"}]
+23-12-08.17:31:10.151 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:31:10.151 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:31:10.151 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 171
+23-12-08.17:31:10.151 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:31:10.151 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:31:11.259 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1108ms)
+23-12-08.17:31:11.259 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:31:18 GMT
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 250
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 192
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39976
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39976
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 55m7.489s
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 36ms
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 36ms
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 15793486bc9159406425b3acf89712e3
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=UjInhHgUTtejiKbTnYJMK5.VBrWbd.RiyTmfErJEibk-1702027878-0-AUz284rT0q/X11O1/3sms6IZGSLB7Jrat53jJvyJEG8XXqMuBIqH8TTjeo2LgtaunNixRBXYMls4WQ7u73JZ660=; path=/; expires=Fri, 08-Dec-23 10:01:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:31:11.260 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=OxBHCl1guIbiPzVWz8lpfdBYWtvQw8D9rmJutC.ttLQ-1702027878492-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:31:11.261 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 8323fe9cbe523438-NRT
+23-12-08.17:31:11.261 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:31:11.261 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:31:11.261 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:31:11.950 [http-nio-7070-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:32:57.941 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 15044 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
+23-12-08.17:32:57.943 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+23-12-08.17:32:58.485 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+23-12-08.17:32:58.490 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+23-12-08.17:32:58.490 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-08.17:32:58.490 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-08.17:32:58.578 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-08.17:32:58.578 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 610 ms
+23-12-08.17:32:59.287 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+23-12-08.17:32:59.296 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+23-12-08.17:32:59.301 [main            ] INFO  Application            - Started Application in 1.668 seconds (JVM running for 2.292)
+23-12-08.17:33:16.122 [http-nio-7070-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23-12-08.17:33:16.122 [http-nio-7070-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+23-12-08.17:33:16.123 [http-nio-7070-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+23-12-08.17:33:16.233 [http-nio-7070-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"敏感词测试：你知道我的电话吗","role":"user"}]
+23-12-08.17:33:16.276 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:33:16.276 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:33:16.276 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 188
+23-12-08.17:33:16.276 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:33:16.276 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:33:17.650 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1373ms)
+23-12-08.17:33:17.650 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:33:17.650 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:33:24 GMT
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 428
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 191
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39972
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39972
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 1h0m13.321s
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 42ms
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 42ms
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: 93431dabdca02b52b5d8ec752284c7bb
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:33:17.651 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=xmTTBgHFhKSNC0iQol_xaXsovqm1mhNM3IlRq1sORoY-1702028004-0-Ae3Ci88sUnk6FbphMgrQxS3/6dwtFK1s+Yh8bd2+eM02Xz0c7QMi0MpcLMmjeK9MzJJH1bl7NzvXeRcqWT/NQlo=; path=/; expires=Fri, 08-Dec-23 10:03:24 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:33:17.652 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=DknuT_JNLfUkWfFIghilzm_cOKYOwkRJ9XQ8RNyd0.Y-1702028004891-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:33:17.652 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 832401b11b7a2617-NRT
+23-12-08.17:33:17.652 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:33:17.652 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:33:17.652 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:33:18.280 [http-nio-7070-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+23-12-08.17:33:28.822 [http-nio-7070-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"你知道我的电话吗","role":"user"}]
+23-12-08.17:33:28.827 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> POST https://api.openai-proxy.com/v1/chat/completions
+23-12-08.17:33:28.827 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+23-12-08.17:33:28.827 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Content-Length: 170
+23-12-08.17:33:28.827 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+23-12-08.17:33:28.827 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - --> END POST
+23-12-08.17:33:30.773 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- 200 https://api.openai-proxy.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1946ms)
+23-12-08.17:33:30.773 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - server: openresty
+23-12-08.17:33:30.773 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - date: Fri, 08 Dec 2023 09:33:38 GMT
+23-12-08.17:33:30.773 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - content-type: text/event-stream
+23-12-08.17:33:30.773 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - access-control-allow-origin: *
+23-12-08.17:33:30.773 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cache-control: no-cache, must-revalidate
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-model: gpt-3.5-turbo-0613
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-organization: user-e6n3uw4gw7ysdruxh1qcymtg
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-processing-ms: 1352
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - openai-version: 2020-10-01
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15724800; includeSubDomains
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-requests: 200
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens: 40000
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-limit-tokens_usage_based: 40000
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-requests: 190
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens: 39977
+23-12-08.17:33:30.774 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-remaining-tokens_usage_based: 39977
+23-12-08.17:33:30.775 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-requests: 1h7m13.071s
+23-12-08.17:33:30.775 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens: 34ms
+23-12-08.17:33:30.775 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-ratelimit-reset-tokens_usage_based: 34ms
+23-12-08.17:33:30.775 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - x-request-id: f329379dbe4e5ef178f87a4b0587f784
+23-12-08.17:33:30.775 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-cache-status: DYNAMIC
+23-12-08.17:33:30.775 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: __cf_bm=RgzVWCnZeMG0puJyGT5y9ErJzfyet1KfMPABonrg.UY-1702028018-0-AWWwB6aC60Gq4GgO2RiXwBks4zY4c8qvR+Lfi4MqcxpYAgsgskwRqS53l5FJFLCYutiwq3wu3YCkJR9XeTRB4dI=; path=/; expires=Fri, 08-Dec-23 10:03:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:33:30.776 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - set-cookie: _cfuvid=zwXizc4UIUqQ9tlSSEXsM017VWCkFIUom.iFFi361_0-1702028018014-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+23-12-08.17:33:30.776 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - cf-ray: 832401fd7a19e082-NRT
+23-12-08.17:33:30.776 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - alt-svc: h3=":443"; ma=86400
+23-12-08.17:33:30.776 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - strict-transport-security: max-age=15768000
+23-12-08.17:33:30.776 [OkHttp https://api.openai-proxy.com/...] INFO  OkHttpClient           - <-- END HTTP
+23-12-08.17:33:31.871 [http-nio-7070-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo

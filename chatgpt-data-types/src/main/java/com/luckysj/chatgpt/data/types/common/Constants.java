@@ -1,10 +1,13 @@
-package com.luckysj.chatgpt.data.types.cmmon;
+package com.luckysj.chatgpt.data.types.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 public class Constants {
+    // 白名单分隔符
+    public final static String SPLIT = ",";
+
     @AllArgsConstructor
     @NoArgsConstructor
     @Getter

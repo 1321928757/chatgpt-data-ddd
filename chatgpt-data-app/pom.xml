@@ -53,6 +53,26 @@
             <groupId>cn.bugstack.chatgpt</groupId>
             <artifactId>chatgpt-sdk-java</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>sensitive-word</artifactId>
+        </dependency>
         <!-- 自身模块 begin -->
         <dependency>
             <groupId>com.luckysj</groupId>
@@ -104,7 +124,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.bugstack.chatgpt.data.Application</mainClass>
+                    <mainClass>com.luckysj.chatgpt.data.Application</mainClass>
                     <layout>JAR</layout>
                 </configuration>
             </plugin>

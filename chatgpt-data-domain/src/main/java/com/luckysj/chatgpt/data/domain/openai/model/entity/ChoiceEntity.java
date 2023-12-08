@@ -1,4 +1,4 @@
-package com.luckysj.chatgpt.data.domain.model.entity;
+package com.luckysj.chatgpt.data.domain.openai.model.entity;
 
 import lombok.Data;
 

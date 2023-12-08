@@ -28,6 +28,12 @@
         <commons-lang3.version>3.9</commons-lang3.version>
         <guava.version>30.1-jre</guava.version>
         <chatgpt-sdk-java.version>1.0-SNAPSHOT</chatgpt-sdk-java.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <java-jwt.version>4.4.0</java-jwt.version>
+        <commons-codec.version>1.15</commons-codec.version>
+        <dom4j.version>1.6.1</dom4j.version>
+        <xstream.version>1.4.10</xstream.version>
+        <sensitive-word.version>0.8.0</sensitive-word.version>
     </properties>
 
     <!--pom工程，用来做jar包的版本控制-->
@@ -71,8 +77,43 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
-
-            <!-- chatgpt-sdk-java https://gitcode.net/KnowledgePlanet/chatgpt/chatgpt-sdk-java-->
+            <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>${java-jwt.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+            <!--处理XML文档的Java库,处理微信公众号的消息需要用到-->
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
+            </dependency>
+            <!--Java对象与XML之间互相转换的工具-->
+            <dependency>
+                <groupId>com.thoughtworks.xstream</groupId>
+                <artifactId>xstream</artifactId>
+                <version>${xstream.version}</version>
+            </dependency>
+            <!--敏感词库-->
+            <dependency>
+                <groupId>com.github.houbb</groupId>
+                <artifactId>sensitive-word</artifactId>
+                <version>${sensitive-word.version}</version>
+            </dependency>
+            <!-- 自定义的chatgpt会话SDK -->
             <dependency>
                 <groupId>cn.bugstack.chatgpt</groupId>
                 <artifactId>chatgpt-sdk-java</artifactId>
@@ -82,6 +123,7 @@
     </dependencyManagement>
 
     <build>
+        <!-- 定义构建后的文件名 -->
         <finalName>chatgpt-data</finalName>
         <plugins>
             <plugin>
@@ -111,6 +153,7 @@
         </plugins>
     </build>
 
+    <!--定义了三个构建配置文件：dev、test和prod。其中，dev配置文件被默认激活，test和prod配置文件需要手动激活-->
     <profiles>
         <profile>
             <id>dev</id>

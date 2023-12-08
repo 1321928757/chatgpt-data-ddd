@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 7070
 
 # 应用配置
 app:
@@ -8,6 +8,10 @@ app:
     api-version: v1
     # 跨域，开发阶段可以设置为 * 不限制
     cross-origin: '*'
+    # 访问频次限制
+    limit-count: 10
+    # 白名单，不做频次拦截【微信的openai】oxfA9w8-23yvwTmo2ombz0E4zJv4
+    white-list: ojbZUv18lbmriaTjcCWBYkOrSbHA
 
 # 线程池配置
 thread:
@@ -24,12 +28,23 @@ thread:
 chatgpt:
   sdk:
     config:
-      # 官网地址 https://api.openai.com/
+      # 官网地址 https://api.openai.com/,国内代理地址 https://api.openai-proxy.com
       api-host: https://api.openai-proxy.com/
       # 官网申请 https://platform.openai.com/account/api-keys
       api-key: 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
-      # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
+      # 认证token，这个配置暂时没用到，假如自己搭建了gpt的代理转发地址，而不想让这代理网站公开使用，就可以加一层token校验，限制使用
       auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+
+# 微信公众号配置信息
+# originalid：原始ID
+# appid：个人AppID
+# token：开通接口服务自定义设置
+wx:
+  config:
+    originalid: gh_b5e71ef2f1d6
+    appid: wxc7b0c2397f036d02
+    token: b8b6
+
 
 # 日志
 logging:
