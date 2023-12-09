@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.luckysj.chatgpt.data.domain.openai.model.aggregates.ChatProcessAggregate;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
+import com.luckysj.chatgpt.data.domain.openai.model.entity.UserAccountQuotaEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.valobj.LogicCheckTypeVO;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.ILogicFilter;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.factory.DefaultLogicFactory;
@@ -33,17 +34,21 @@ public class ChatService extends AbstractChatService{
     private DefaultLogicFactory logicFactory;
 
     @Override
-    protected RuleLogicEntity<ChatProcessAggregate> doCheckLogic(ChatProcessAggregate chatProcess, String... logics) throws Exception {
+    protected RuleLogicEntity<ChatProcessAggregate> doCheckLogic(ChatProcessAggregate chatProcess, UserAccountQuotaEntity userAccountQuotaEntity, String... logics) throws Exception {
         // 获取到校验规则map
         Map<String, ILogicFilter> logicFilterMap = logicFactory.openLogicFilter();
         // 调用对应校验规则进行校验
         RuleLogicEntity<ChatProcessAggregate> entity = null;
         for (String code : logics) {
-            entity = logicFilterMap.get(code).fileter(chatProcess);
+            // 传入规则为空，不需要校验
+            if(DefaultLogicFactory.LogicModel.NULL.getCode().equals(code)) continue;
+            // 校验
+            entity = logicFilterMap.get(code).fileter(chatProcess, userAccountQuotaEntity);
             if (!LogicCheckTypeVO.SUCCESS.equals(entity.getType())){
                 return entity;
             }
         }
+
         // entity 为 null的情况一般为传入的logics校验规则参数为空，即没有使用任何校验规则，这样也算校验通过
         return entity != null ? entity : RuleLogicEntity.<ChatProcessAggregate>builder()
                 .data(chatProcess).type(LogicCheckTypeVO.SUCCESS).build();

@@ -58,9 +58,12 @@ public class ChatGPTAIServiceController {
                 return emitter;
             }
 
+            // 3.获取openid
+            String openid = authService.parseOpenid(token);
+
             // 2. 构建参数
             ChatProcessAggregate chatProcessAggregate = ChatProcessAggregate.builder()
-                    .openid(token)
+                    .openid(openid)
                     .model(request.getModel())
                     .messages(request.getMessages().stream()
                             .map(entity -> MessageEntity.builder()

@@ -4,6 +4,7 @@ import com.google.common.cache.Cache;
 import com.luckysj.chatgpt.data.domain.openai.annotation.LogicStrategy;
 import com.luckysj.chatgpt.data.domain.openai.model.aggregates.ChatProcessAggregate;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
+import com.luckysj.chatgpt.data.domain.openai.model.entity.UserAccountQuotaEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.valobj.LogicCheckTypeVO;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.ILogicFilter;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.factory.DefaultLogicFactory;
@@ -22,11 +23,15 @@ import javax.annotation.Resource;
 @Slf4j
 @Component
 @LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.ACCESS_LIMIT)
-public class AccessLimitFilter implements ILogicFilter {
+public class AccessLimitFilter implements ILogicFilter<UserAccountQuotaEntity> {
 
     // 访问频次限制
     @Value("${app.config.limit-count}")
     private Integer limitCount;
+
+    // 访问频次时限
+    @Value("${app.config.limit-count-time}")
+    private Integer limitCountTime;
 
     // 访问白名单
     @Value("${app.config.white-list}")
@@ -37,15 +42,24 @@ public class AccessLimitFilter implements ILogicFilter {
     private Cache<String, Integer> visitCache;
 
     @Override
-    public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcess) throws Exception {
+    public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcess, UserAccountQuotaEntity userData) throws Exception {
         // 白名单用户不做限制
         if(chatProcess.isWhileList(whiteListStr)){
             return RuleLogicEntity.<ChatProcessAggregate>builder()
-                    .type(LogicCheckTypeVO.SUCCESS).data(chatProcess).build();
+                    .type(LogicCheckTypeVO.SUCCESS)
+                    .data(chatProcess)
+                    .build();
+        }
+
+        // 登录用户暂不限制次数
+        if(userData != null) {
+            return RuleLogicEntity.<ChatProcessAggregate>builder()
+                    .type(LogicCheckTypeVO.SUCCESS)
+                    .data(chatProcess)
+                    .build();
         }
 
         String openid = chatProcess.getOpenid();
-
         // 判断访问次数
         int visitCount = visitCache.get(openid, () -> 0);
         if (visitCount < limitCount) {
@@ -55,7 +69,7 @@ public class AccessLimitFilter implements ILogicFilter {
         }
 
         return RuleLogicEntity.<ChatProcessAggregate>builder()
-                .info("您今日的免费" + limitCount + "次，已耗尽！")
+                .info("近" + limitCountTime + "分钟访问达到次数上限" + limitCount + "次，请稍后重试！")
                 .type(LogicCheckTypeVO.REFUSE).data(chatProcess).build();
     }
 }

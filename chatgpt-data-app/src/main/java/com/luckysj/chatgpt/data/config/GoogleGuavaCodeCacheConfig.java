@@ -2,6 +2,7 @@ package com.luckysj.chatgpt.data.config;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,6 +15,8 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 public class GoogleGuavaCodeCacheConfig {
+    @Value("${app.config.limit-count-time}")
+    private Integer limitCountTime;
 
     // 存放验证码等不常变化的一些数据
     @Bean(name = "codeCache")
@@ -27,7 +30,7 @@ public class GoogleGuavaCodeCacheConfig {
     @Bean(name = "visitCache")
     public Cache<String, Integer> visitCache() {
         return CacheBuilder.newBuilder()
-                .expireAfterWrite(12, TimeUnit.HOURS)
+                .expireAfterWrite(limitCountTime, TimeUnit.HOURS)
                 .build();
     }
 

@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chatgpt-data-app" />
-        <module name="chatgpt-data-types" />
-        <module name="chatgpt-data-infrastructure" />
-        <module name="chatgpt-data-domain" />
         <module name="chatgpt-data-trigger" />
+        <module name="chatgpt-data-domain" />
+        <module name="chatgpt-data-infrastructure" />
+        <module name="chatgpt-data-types" />
+        <module name="chatgpt-data-app" />
       </profile>
     </annotationProcessing>
   </component>

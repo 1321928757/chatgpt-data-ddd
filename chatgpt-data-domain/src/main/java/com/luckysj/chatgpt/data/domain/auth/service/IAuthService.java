@@ -25,8 +25,16 @@ public interface IAuthService {
     boolean checkToken(String token);
 
     /**
+    * @description  解析token获取openid
+    * @param token
+    * @return String openid
+    * @date 2023/12/09 19:37:18
+    */
+    String parseOpenid(String token);
+
+    /**
      * @description 本地获取身份测试（开发环境）
-     * @return Boolean
+     * @return
      * @date 2023/12/05 15:00:10
      */
     AuthStateEntity getAuthTest();

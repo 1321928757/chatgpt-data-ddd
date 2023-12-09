@@ -5,6 +5,7 @@ import com.luckysj.chatgpt.data.domain.openai.annotation.LogicStrategy;
 import com.luckysj.chatgpt.data.domain.openai.model.aggregates.ChatProcessAggregate;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.MessageEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
+import com.luckysj.chatgpt.data.domain.openai.model.entity.UserAccountQuotaEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.valobj.LogicCheckTypeVO;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.ILogicFilter;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.factory.DefaultLogicFactory;
@@ -25,7 +26,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Component
 @LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.SENSITIVE_WORD)
-public class SensitiveWordFilter implements ILogicFilter {
+public class SensitiveWordFilter implements ILogicFilter<UserAccountQuotaEntity> {
     // 敏感词的引导类
     @Resource
     private SensitiveWordBs words;
@@ -35,7 +36,7 @@ public class SensitiveWordFilter implements ILogicFilter {
     private String whiteListStr;
 
     @Override
-    public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcess) throws Exception {
+    public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcess, UserAccountQuotaEntity userData) throws Exception {
         // 白名单用户不做限制
         if(chatProcess.isWhileList(whiteListStr)){
             return RuleLogicEntity.<ChatProcessAggregate>builder()
