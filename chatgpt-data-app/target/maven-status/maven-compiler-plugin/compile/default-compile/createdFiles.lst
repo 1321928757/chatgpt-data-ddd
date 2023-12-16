@@ -1,7 +1,0 @@
-com\luckysj\chatgpt\data\config\ChatGPTSDKConfigProperties.class
-com\luckysj\chatgpt\data\config\ThreadPoolConfigProperty.class
-com\luckysj\chatgpt\data\config\ChatGPTSDKConfig.class
-com\luckysj\chatgpt\data\config\GoogleGuavaCodeCacheConfig.class
-com\luckysj\chatgpt\data\config\ThreadPoolConfig.class
-META-INF\spring-configuration-metadata.json
-com\luckysj\chatgpt\data\Application.class

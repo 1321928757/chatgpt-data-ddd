@@ -25,4 +25,20 @@ public interface IUserAccountDao {
     * @date 2023/12/09 17:07:14
     */
     UserAccountPO queryUserAccount(String openid);
+
+    /**
+    * @description 添加账户
+    * @param userAccountPO 账户实体类
+    * @return 影响的行数
+    * @date 2023/12/10 16:36:59
+    */
+    int insert(UserAccountPO userAccountPO);
+
+    /**
+    * @description 为账户添加额度
+    * @param userAccountPOReq 添加信息
+    * @return 影响的行数
+    * @date 2023/12/10 16:37:32
+    */
+    int addAccountQuota(UserAccountPO userAccountPOReq);
 }

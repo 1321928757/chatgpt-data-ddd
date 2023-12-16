@@ -34,6 +34,7 @@
         <dom4j.version>1.6.1</dom4j.version>
         <xstream.version>1.4.10</xstream.version>
         <sensitive-word.version>0.8.0</sensitive-word.version>
+        <chatglm-sdk-java.version>1.1</chatglm-sdk-java.version>
     </properties>
 
     <!--pom工程，用来做jar包的版本控制-->
@@ -118,6 +119,39 @@
                 <groupId>cn.bugstack.chatgpt</groupId>
                 <artifactId>chatgpt-sdk-java</artifactId>
                 <version>${chatgpt-sdk-java.version}</version>
+            </dependency>
+            <!-- 自定义的chatglm会话SDK -->
+            <dependency>
+                <groupId>cn.bugstack</groupId>
+                <artifactId>chatglm-sdk-java</artifactId>
+                <version>${chatglm-sdk-java.version}</version>
+            </dependency>
+
+            <!-- 支付宝SDK -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>3.7.73.ALL</version>
+            </dependency>
+
+            <!-- 支付宝SDK依赖的日志 -->
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
+            </dependency>
+
+            <!-- 二维码生成&识别组件 -->
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>3.3.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>3.3.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

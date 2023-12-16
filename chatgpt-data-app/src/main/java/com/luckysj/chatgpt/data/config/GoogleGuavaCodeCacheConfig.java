@@ -2,6 +2,8 @@ package com.luckysj.chatgpt.data.config;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import com.google.common.eventbus.EventBus;
+import com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,4 +36,11 @@ public class GoogleGuavaCodeCacheConfig {
                 .build();
     }
 
+    // 事件总线，发布订阅消息（适用于一些简单场景，后续可以换成mq消息队列）
+    @Bean
+    public EventBus eventBusListener(OrderPaySuccessListener listener){
+        EventBus eventBus = new EventBus();
+        eventBus.register(listener);
+        return eventBus;
+    }
 }

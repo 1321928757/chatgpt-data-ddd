@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.luckysj.chatgpt.data.infrastructure.dao.IOpenAIOrderDao">
+
+    <resultMap id="userAccountMap" type="com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO">
+        <id column="id" property="id"/>
+        <result column="openid" property="openid"/>
+        <result column="product_id" property="productId"/>
+        <result column="product_name" property="productName"/>
+        <result column="product_quota" property="productQuota"/>
+        <result column="order_id" property="orderId"/>
+        <result column="order_time" property="orderTime"/>
+        <result column="order_status" property="orderStatus"/>
+        <result column="total_amount" property="totalAmount"/>
+        <result column="pay_type" property="payType"/>
+        <result column="pay_url" property="payUrl"/>
+        <result column="pay_amount" property="payAmount"/>
+        <result column="transaction_id" property="transactionId"/>
+        <result column="pay_status" property="payStatus"/>
+        <result column="pay_time" property="payTime"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO">
+        INSERT INTO openai_order(
+        openid, product_id, product_name, product_quota, order_id,
+        order_time, order_status, total_amount, pay_type, pay_status,
+        pay_time, create_time, update_time)
+        VALUES(
+        #{openid}, #{productId}, #{productName}, #{productQuota}, #{orderId},
+        #{orderTime}, #{orderStatus}, #{totalAmount}, #{payType}, #{payStatus},
+        #{payTime}, now(), now()
+        )
+    </insert>
+
+    <select id="queryUnpaidOrder" parameterType="com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO"
+            resultMap="userAccountMap">
+        SELECT order_id, product_name, pay_url, pay_status, total_amount
+        FROM openai_order
+        WHERE openid = #{openid} AND product_id = #{productId} AND order_status = 0
+        ORDER BY id desc
+        LIMIT 1
+    </select>
+
+    <update id="updateOrderPayInfo" parameterType="com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO">
+        UPDATE openai_order SET
+        pay_url = #{payUrl},
+        pay_status = #{payStatus},
+        update_time = now()
+        WHERE openid = #{openid} AND order_id = #{orderId}
+    </update>
+
+    <update id="changeOrderPaySuccess" parameterType="com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO">
+        UPDATE openai_order SET
+        order_status = 1, pay_status = 1,
+        pay_amount = #{payAmount},
+        pay_time = #{payTime},
+        transaction_id = #{transactionId},
+        update_time = now()
+        WHERE order_id = #{orderId} AND pay_time is null
+    </update>
+
+    <select id="queryOrder" parameterType="java.lang.String" resultMap="userAccountMap">
+        SELECT openid, product_id, product_name, product_quota, order_id,
+        order_time, order_status, total_amount, pay_type, pay_status,
+        pay_time
+        FROM openai_order
+        WHERE order_id = #{orderId}
+    </select>
+
+    <update id="updateOrderStatusDeliverGoods" parameterType="java.lang.String">
+        UPDATE openai_order SET
+        order_status = 2
+        WHERE order_id = #{orderId} AND order_status = 1
+    </update>
+
+    <select id="queryReplenishmentOrder" resultType="java.lang.String">
+        SELECT order_id as orderId FROM openai_order
+        WHERE order_status = 1 AND pay_status = 1 AND NOW() >= order_time + INTERVAL 3 MINUTE
+        ORDER BY id ASC
+        LIMIT 10
+    </select>
+
+    <select id="queryNoPayNotifyOrder" resultType="java.lang.String">
+        SELECT order_id as orderId FROM openai_order
+        WHERE order_status = 0 AND pay_status = 0 AND NOW() >= order_time + INTERVAL 1 MINUTE
+        ORDER BY id ASC
+        LIMIT 10
+    </select>
+
+    <select id="queryTimeoutCloseOrderList" resultType="java.lang.String">
+        SELECT order_id as orderId FROM openai_order
+        WHERE order_status = 0 AND pay_status = 0 AND NOW() >= order_time + INTERVAL 30 MINUTE
+        ORDER BY id ASC
+        LIMIT 50
+    </select>
+
+
+    <update id="changeOrderClose" parameterType="com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO">
+        UPDATE openai_order SET
+        order_status = 3, pay_status = 3,
+        update_time = now()
+        WHERE order_id = #{orderId} AND pay_status = 0
+    </update>
+
+</mapper>

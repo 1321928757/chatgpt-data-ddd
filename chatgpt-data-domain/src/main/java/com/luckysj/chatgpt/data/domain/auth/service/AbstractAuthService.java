@@ -6,12 +6,16 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.google.common.cache.Cache;
 import com.luckysj.chatgpt.data.domain.auth.model.entity.AuthStateEntity;
 import com.luckysj.chatgpt.data.domain.auth.model.valobj.AuthTypeVo;
+import com.luckysj.chatgpt.data.domain.auth.repository.IAuthRepository;
+import com.luckysj.chatgpt.data.types.exception.ChatGPTException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -35,6 +39,9 @@ public abstract class AbstractAuthService implements IAuthService{
     @Resource
     private Cache<String, String> codeCache;
 
+    @Resource
+    private IAuthRepository iAuthRepository;
+
     @Override
     public AuthStateEntity doLogin(String code) {
         // 1. 初步格式校验，验证码应为4位的数字
@@ -52,10 +59,19 @@ public abstract class AbstractAuthService implements IAuthService{
             return authStateEntity;
         }
 
-        // 3. 获取 Token 并返回
+
+        // 3. 如果用户账号不存在，则添加用户账号
+        String openId = authStateEntity.getOpenId();
+        boolean addResult = iAuthRepository.insertUserIfNotExist(openId);
+        if(!addResult){
+            log.error("插入用户账号新数据时出错，openid:{}", openId);
+            throw new ChatGPTException("插入用户账号新数据时出错，openid:" + openId);
+        }
+
+        // 4. 获取 Token 并返回
         Map<String, Object> chaim = new HashMap<>();
         chaim.put("openId", authStateEntity.getOpenId());
-        String token = encode(authStateEntity.getOpenId(), 7 * 24 * 60 * 60 * 1000, chaim);
+        String token = encode(openId, 7 * 24 * 60 * 60 * 1000, chaim);
         authStateEntity.setToken(token);
 
         return authStateEntity;
@@ -131,7 +147,7 @@ public abstract class AbstractAuthService implements IAuthService{
     @Override
     public AuthStateEntity getAuthTest() {
         // 生成虚拟身份信息
-        String openid = "123123123213";
+        String openid = "xfg";
         String code = "2133";
         codeCache.put(code, openid);
         codeCache.put(openid, code);
@@ -146,5 +162,21 @@ public abstract class AbstractAuthService implements IAuthService{
         String token = encode(authStateEntity.getOpenId(), 7 * 24 * 60 * 60 * 1000, chaim);
         authStateEntity.setToken(token);
         return authStateEntity;
+    }
+
+    @Override
+    public String getAuthCode(String openid) {
+        // 缓存验证码
+        String isExistCode = codeCache.getIfPresent(openid);
+
+        // 判断验证码 - 不考虑验证码重复问题
+        if (StringUtils.isBlank(isExistCode)) {
+            // 创建验证码
+            String code = RandomStringUtils.randomNumeric(4);
+            codeCache.put(code, openid);
+            codeCache.put(openid, code);
+            isExistCode = code;
+        }
+        return isExistCode;
     }
 }

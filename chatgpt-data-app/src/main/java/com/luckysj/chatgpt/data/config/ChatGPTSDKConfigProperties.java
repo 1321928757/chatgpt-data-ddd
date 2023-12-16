@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author www.luckysj.top 刘仕杰
- * @description ChatGPTSDKConfig ChatGPTSDK配置信息
+ * @description ChatGPT会话工厂配置
  * @create 2023-12-04 18：53
  */
 @Data

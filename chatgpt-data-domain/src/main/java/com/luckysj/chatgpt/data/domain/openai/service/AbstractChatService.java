@@ -7,13 +7,19 @@ import com.luckysj.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.UserAccountQuotaEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.valobj.LogicCheckTypeVO;
 import com.luckysj.chatgpt.data.domain.openai.repository.IOpenAiRepository;
+import com.luckysj.chatgpt.data.domain.openai.service.channel.OpenAiGroupService;
+import com.luckysj.chatgpt.data.domain.openai.service.channel.impl.ChatGLMService;
+import com.luckysj.chatgpt.data.domain.openai.service.channel.impl.ChatGPTService;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.factory.DefaultLogicFactory;
 import com.luckysj.chatgpt.data.types.common.Constants;
+import com.luckysj.chatgpt.data.types.enums.OpenAiChannel;
 import com.luckysj.chatgpt.data.types.exception.ChatGPTException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author www.luckysj.top 刘仕杰
@@ -22,17 +28,23 @@ import javax.annotation.Resource;
  */
 @Slf4j
 public abstract class AbstractChatService implements IChatService {
-    //chat会话session
-    @Resource
-    protected OpenAiSession openAiSession;
 
     @Resource
     private IOpenAiRepository openAiRepository;
 
+    // 对话服务组
+    private final Map<OpenAiChannel, OpenAiGroupService> openAiGroup = new HashMap<>();
+
+    public AbstractChatService(ChatGPTService chatGPTService, ChatGLMService chatGLMService) {
+        openAiGroup.put(OpenAiChannel.ChatGPT, chatGPTService);
+        openAiGroup.put(OpenAiChannel.ChatGLM, chatGLMService);
+    }
+
+
     @Override
     public ResponseBodyEmitter completions(ResponseBodyEmitter emitter, ChatProcessAggregate chatProcess) {
         try {
-            // 1.请求应答
+            // 1.绑定应答回调事件
             emitter.onCompletion(() -> {
                 log.info("流式问答请求完成，使用模型：{}", chatProcess.getModel());
             });
@@ -56,8 +68,9 @@ public abstract class AbstractChatService implements IChatService {
                 return emitter;
             }
 
-            // 4.应答处理
-            this.doMessageResponse(ruleLogicEntity.getData(), emitter);
+            // 4.请求应答处理【使用策略模式判断使用GPT的会话还是其他模型的 会话】
+            openAiGroup.get(chatProcess.getChannel()).doMessageResponse(ruleLogicEntity.getData(), emitter);
+
         } catch (Exception e) {
             throw new ChatGPTException(Constants.ResponseCode.UN_ERROR.getCode(), Constants.ResponseCode.UN_ERROR.getInfo());
         }
@@ -72,7 +85,4 @@ public abstract class AbstractChatService implements IChatService {
             ChatProcessAggregate chatProcessAggregate, UserAccountQuotaEntity userAccountQuotaEntity,
             String... logics) throws Exception;
 
-    // 消息应当处理
-    protected abstract void doMessageResponse(ChatProcessAggregate chatProcessAggregate,
-                                              ResponseBodyEmitter emitter) throws JsonProcessingException;
 }

@@ -44,15 +44,7 @@ public class AccessLimitFilter implements ILogicFilter<UserAccountQuotaEntity> {
     @Override
     public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcess, UserAccountQuotaEntity userData) throws Exception {
         // 白名单用户不做限制
-        if(chatProcess.isWhileList(whiteListStr)){
-            return RuleLogicEntity.<ChatProcessAggregate>builder()
-                    .type(LogicCheckTypeVO.SUCCESS)
-                    .data(chatProcess)
-                    .build();
-        }
-
-        // 登录用户暂不限制次数
-        if(userData != null) {
+        if(chatProcess.isWhiteList(whiteListStr)){
             return RuleLogicEntity.<ChatProcessAggregate>builder()
                     .type(LogicCheckTypeVO.SUCCESS)
                     .data(chatProcess)

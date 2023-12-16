@@ -1,8 +1,0 @@
-com\luckysj\chatgpt\data\trigger\http\WeiXinPortalController.class
-com\luckysj\chatgpt\data\trigger\http\dto\ChatGPTRequestDTO$ChatGPTRequestDTOBuilder.class
-com\luckysj\chatgpt\data\trigger\http\dto\ChoiceEntity.class
-com\luckysj\chatgpt\data\trigger\http\dto\MessageEntity$MessageEntityBuilder.class
-com\luckysj\chatgpt\data\trigger\http\AuthController.class
-com\luckysj\chatgpt\data\trigger\http\ChatGPTAIServiceController.class
-com\luckysj\chatgpt\data\trigger\http\dto\ChatGPTRequestDTO.class
-com\luckysj\chatgpt\data\trigger\http\dto\MessageEntity.class

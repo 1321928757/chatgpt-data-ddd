@@ -68,4 +68,15 @@ public class AuthController {
                 .data(authStateEntity.getToken())
                 .build();
     }
+
+    // 获取身份信息测试接口（本地测试用，不需要通过微信公众号登录，防止影响原项目的运行）
+    @RequestMapping(value = "getCode", method = RequestMethod.GET)
+    public Response<String> getAuth(@RequestParam String openid) {
+        String code = authService.getAuthCode(openid);
+        return Response.<String>builder()
+                .code(Constants.ResponseCode.SUCCESS.getCode())
+                .info(Constants.ResponseCode.SUCCESS.getInfo())
+                .data(code)
+                .build();
+    }
 }

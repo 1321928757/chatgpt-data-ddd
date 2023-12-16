@@ -24,6 +24,15 @@ public class AuthService extends AbstractAuthService{
 
     @Override
     public AuthStateEntity checkCode(String code){
+        // TODO 这个设置个魔法值，为了给支付审核的人通过
+        if(code.equals("1145")){
+            return AuthStateEntity.builder()
+                    .code(AuthTypeVo.CODE_SUCCESS.getCode())
+                    .info(AuthTypeVo.CODE_SUCCESS.getInfo())
+                    .openId("xfg")
+                    .build();
+        }
+
         // 从缓存中读取验证码
         String openId = cacheCode.getIfPresent(code);
         if(StringUtils.isBlank(openId)){
@@ -48,6 +57,7 @@ public class AuthService extends AbstractAuthService{
 
     @Override
     public boolean checkToken(String token) {
+
         return isVerify(token);
     }
 

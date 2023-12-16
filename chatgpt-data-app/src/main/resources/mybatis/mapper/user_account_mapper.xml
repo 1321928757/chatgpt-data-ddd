@@ -12,6 +12,10 @@
         <result column="create_time" property="createTime"/>
         <result column="update_time" property="updateTime"/>
     </resultMap>
+    <insert id="insert" parameterType="com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO">
+        INSERT INTO user_account (openid, total_quota, surplus_quota, model_types, status, create_time, update_time)
+        VALUES (#{openid}, #{totalQuota}, #{surplusQuota}, #{modelTypes}, #{status}, now(), now())
+    </insert>
 
     <select id="queryUserAccount" parameterType="java.lang.String" resultMap="userAccountMap">
         SELECT openid, total_quota, surplus_quota, model_types, status
@@ -22,6 +26,14 @@
     <update id="subAccountQuota" parameterType="java.lang.String">
         UPDATE user_account SET surplus_quota = surplus_quota - 1
         WHERE openid = #{openid} AND surplus_quota > 0 AND status = 0
+    </update>
+
+    <update id="addAccountQuota" parameterType="com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO">
+        UPDATE user_account SET
+        total_quota = total_quota + #{totalQuota},
+        surplus_quota = surplus_quota + #{surplusQuota},
+        update_time = now()
+        WHERE openid = #{openid}
     </update>
 
 </mapper>

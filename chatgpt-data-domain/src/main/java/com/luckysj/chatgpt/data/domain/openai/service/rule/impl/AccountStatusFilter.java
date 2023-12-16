@@ -22,7 +22,6 @@ import org.springframework.stereotype.Component;
 public class AccountStatusFilter implements ILogicFilter<UserAccountQuotaEntity> {
     @Override
     public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcessAggregate, UserAccountQuotaEntity data) throws Exception {
-
         if(UserAccountStatusVO.AVAILABLE.equals(data.getUserAccountStatusVO())){
             return RuleLogicEntity.<ChatProcessAggregate>builder()
                     .type(LogicCheckTypeVO.SUCCESS)

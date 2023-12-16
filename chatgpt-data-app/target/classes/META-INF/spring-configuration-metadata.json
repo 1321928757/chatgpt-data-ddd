@@ -1,17 +1,46 @@
 {
   "groups": [
     {
+      "name": "chatglm.sdk.config",
+      "type": "com.luckysj.chatgpt.data.config.ChatGLMSDKConfigProperties",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGLMSDKConfigProperties"
+    },
+    {
       "name": "chatgpt.sdk.config",
       "type": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties",
       "sourceType": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties"
     },
     {
+      "name": "pay.alipay",
+      "type": "com.luckysj.chatgpt.data.config.AliPayConfigProperties",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
       "name": "thread.pool.executor.config",
-      "type": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
-      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty"
+      "type": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties"
     }
   ],
   "properties": [
+    {
+      "name": "chatglm.sdk.config.api-host",
+      "type": "java.lang.String",
+      "description": "转发地址",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGLMSDKConfigProperties"
+    },
+    {
+      "name": "chatglm.sdk.config.api-secret-key",
+      "type": "java.lang.String",
+      "description": "可以申请 sk-***",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGLMSDKConfigProperties"
+    },
+    {
+      "name": "chatglm.sdk.config.enable",
+      "type": "java.lang.Boolean",
+      "description": "状态；open = 开启、close 关闭",
+      "sourceType": "com.luckysj.chatgpt.data.config.ChatGLMSDKConfigProperties",
+      "defaultValue": false
+    },
     {
       "name": "chatgpt.sdk.config.api-host",
       "type": "java.lang.String",
@@ -31,37 +60,101 @@
       "sourceType": "com.luckysj.chatgpt.data.config.ChatGPTSDKConfigProperties"
     },
     {
+      "name": "pay.alipay.alipay-public-key",
+      "type": "java.lang.String",
+      "description": "支付公钥",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
+      "name": "pay.alipay.app-id",
+      "type": "java.lang.String",
+      "description": "appid",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
+      "name": "pay.alipay.app-private-key",
+      "type": "java.lang.String",
+      "description": "应用私钥",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
+      "name": "pay.alipay.c-h-a-r-s-e-t",
+      "type": "java.lang.String",
+      "description": "编码",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties",
+      "defaultValue": "UTF-8"
+    },
+    {
+      "name": "pay.alipay.f-o-r-m-a-t",
+      "type": "java.lang.String",
+      "description": "返回格式",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties",
+      "defaultValue": "json"
+    },
+    {
+      "name": "pay.alipay.log-path",
+      "type": "java.lang.String",
+      "description": "日志记录目录",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties",
+      "defaultValue": "\/log"
+    },
+    {
+      "name": "pay.alipay.notify-url",
+      "type": "java.lang.String",
+      "description": "支付结果通知地址",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
+      "name": "pay.alipay.qrcode-url",
+      "type": "java.lang.String",
+      "description": "二维码跳转地址",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
+      "name": "pay.alipay.s-i-g-n-t-y-p-e",
+      "type": "java.lang.String",
+      "description": "RSA2",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties",
+      "defaultValue": "RSA2"
+    },
+    {
+      "name": "pay.alipay.url",
+      "type": "java.lang.String",
+      "description": "支付宝网关地址",
+      "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
       "name": "thread.pool.executor.config.block-queue-size",
       "type": "java.lang.Integer",
       "description": "最大队列数",
-      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
       "defaultValue": 5000
     },
     {
       "name": "thread.pool.executor.config.core-pool-size",
       "type": "java.lang.Integer",
       "description": "核心线程数",
-      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
       "defaultValue": 20
     },
     {
       "name": "thread.pool.executor.config.keep-alive-time",
       "type": "java.lang.Long",
       "description": "最大等待时间",
-      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
       "defaultValue": 10
     },
     {
       "name": "thread.pool.executor.config.max-pool-size",
       "type": "java.lang.Integer",
       "description": "最大线程数",
-      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
       "defaultValue": 200
     },
     {
       "name": "thread.pool.executor.config.policy",
       "type": "java.lang.String",
-      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperty",
+      "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
       "defaultValue": "AbortPolicy"
     }
   ],

@@ -38,4 +38,11 @@ public interface IAuthService {
      * @date 2023/12/05 15:00:10
      */
     AuthStateEntity getAuthTest();
+
+    /**
+     * @description 本地获取验证码
+     * @return
+     * @date 2023/12/05 15:00:10
+     */
+    String getAuthCode(String openid);
 }
