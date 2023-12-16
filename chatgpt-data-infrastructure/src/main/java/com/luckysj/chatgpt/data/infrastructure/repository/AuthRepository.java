@@ -5,9 +5,11 @@ import com.luckysj.chatgpt.data.domain.openai.model.valobj.UserAccountStatusVO;
 import com.luckysj.chatgpt.data.infrastructure.dao.IUserAccountDao;
 import com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+@Service
 public class AuthRepository implements IAuthRepository {
     @Resource
     private IUserAccountDao userAccountDao;
