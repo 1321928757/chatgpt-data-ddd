@@ -23,7 +23,7 @@ app:
 spring:
   datasource:
     username: root
-    password: lsj20030222
+    password: xxxx
     url: jdbc:mysql://localhost:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
   hikari:
@@ -59,7 +59,7 @@ chatgpt:
       # 官网地址 https://api.openai.com/,国内代理地址 https://api.openai-proxy.com/
       api-host: https://api.openai-proxy.com/
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: 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
+      api-key: xxxxxxxxxxxxx
       # 认证token，这个配置暂时没用到，假如自己搭建了gpt的代理转发地址，而不想让这代理网站公开使用，就可以加一层token校验，限制使用
       auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
 
@@ -80,9 +80,9 @@ pay:
     # 支付宝沙盒环境appid
     app_id: 9021000132630832
     # 支付宝沙盒环境应用密钥
-    app_private_key: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDw3jyqCp8TkAMDFl/bqj6IUsuVACwNx9jfLALQkKY06iGEUpVLmxsAIa7Ir7VC1HFpdfRgE4uezyFAmoebZAD7MDA4W4VLyfrY43IKpQN6rnB2N476nN8TLCfdLsgp2pl86YZbiBm4rDMl+BkIiT55TxRcE3Ykd5/ZhNUgD7gaPDmSti1dyZ7DHPu6wmk8tFZvjRG04gn+gPigfY+xC+fXtVYAuNxMTyFkrekutmE85inxDx1MwIkwSKl3PCRn1bF5MrtjtXXJxcyIWxEAjRbZsv/TlLkZR0nDhgWKaTkaA0vdFz7xtXteUdvqGyvA0WYpSXc2OUozv1gUnRpHoUYVAgMBAAECggEAf5O2XfoyN5JXhhMbwqVxaZMw8UKeEs5/N/V/qCh1YCGCjyuOl/UXYAJ3KSSnxTXwvAMV5K11ji/3VNiEavGU83aak78l4vagPrB5ftnX9ere9j6HJIZiQS1qD+Tvb/uwwFCQMXrs5LuQe9PkrnjC9k3EYuCL+tTBfdy1Zb3trTah2sA1P1+LOKGisDTcKpGUqBYhYrL+sbyXEIhA9WO3EabKrlwRsVItJ/bmOph0A2B9xXt1y6mx99xK+z9/AC8J24Ku9owtY0vbX+Vd3fZBcyeRCVjdWnzlS4eqIiuUAnI27sl7PaENYsjcLf4SHatBubkoDFZw0MILWGto3c6pIQKBgQD479o8Obv02kKNcUs+BiF442WX86y+nDL3G/D2clrtzgKpVQmQGAH7BtN/nwVf+xcdj+h66WFaR6I0H2DTNSapoxY+EWgeXNF1DnkaOqaOYXCyiCEFN6GF7vjVMnhCRhGk5H5EagkZBJ+LGIev/jmdi6sxnfEeAl69bQpxwxR1FwKBgQD3s8bhCXfYGuiB3H8K4rFQpMupPlB7q3/LuzAijgL0GSvyMYFlPUy/g6RhwyYhNOnigS2/xspJCMJJCanq9CiOGd5YM5lc+bf+p12z9fR2HEVWyXYhmKXxjU1eSnJ7ajq+Jo4qrisnBv3m7CscrxVW8gaSBJ3cfXdJ7LrT36YxswKBgGMPFvnGQ6wQulEMl1NsHx+65W+NEN2czI8WuFFpehONWfPGGhMT6p3YvorXXc0u3qjt3iYi/pFtVfeF0QLa8LKqaixywsrqRpNdGgW89xBLaAwzLWilFYp1aOF1vvMobNb/8dsJkus4ssAoF76J3KV7sbkBz7QQX2DjpjdU2KwrAoGAI59eHaTv8EtGXs6oEpexamiYxXkpt+9dDJ6Z+I41zIcGM+l8s2OScwRqkoivJh1m+WUcgDUFiGVTE4/pONnuLyl3OXYKOz3KgTvulN/tTUMZkbadX42FZ+yrUMEiH6+STSBcV7T+jblKsHgMZy6iwgNCgKNbVIdSrXX3FFtYmlMCgYEA796pLzYwnwiM13ejNMqS0HwuBqP1ZshlvdOt/Qxy6YVKhyPzHgDs5zPwNq045gkdxJBKeXHxqcvOpCuXJb4FIFS/OVWupuUiU+a/MIqEE9XEsMhZ7XyEt46TAstnrf4gMK+n1ELRm7tjMCzUHlrISbo+w72rwizKsv09JHqXc7Y=
+    app_private_key: xxxxxxxxxxx
     # 支付宝公钥
-    alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRQHhyiF6i/7NDjy1J11+NIPdjIXDQqHuWeA1Q+kKp/GH6IgxfMTICF9C94hagvIF51GG3r+Iji9Xv0DmEBKgCIdn9YnmczIxL2SMZoJdqIoQufh5Ai/z2uzLln64SNtxIaliYNNPg0R1gmzQVL4jL7/ksAoH+ZUaIBs7p1gVCJdZFfO9anx3Obggw8z8yMH4dFN6exXhOLbfnLQj9TeoDaGYs0GQMmtlo2DcBpH1lA92ORw87yYmpiqld0qiCEUqEk0UkbcKSy665NJHPX7pa9pkTFLkWW0w4pYyBj+6W0hXnrK+Gwe5QFGGfUsG9VgQfMUIe7zOI7VU+Pfn4sh5QIDAQAB
+    alipay_public_key: xxxxxxxxxxxxxxxxx
     # 支付宝网关地址
     url: https://openapi-sandbox.dl.alipaydev.com/gateway.do
     # 二维码的跳转地址，这里指向我们的支付接口
@@ -96,9 +96,9 @@ pay:
 # token：开通接口服务自定义设置
 wx:
   config:
-    originalid: gh_b5e71ef2f1d6
-    appid: wxc7b0c2397f036d02
-    token: b8b6
+    originalid: xxxxxxxxxxxxxxxxxxx
+    appid: xxxxxxxxxxxxxxxxxxx
+    token: xxxxxxxxxxxxxxxx
 
 
 # 日志
