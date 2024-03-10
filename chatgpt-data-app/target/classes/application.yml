@@ -1,5 +1,6 @@
+
 spring:
   config:
-    name: chatgpt-data
+    name: chatgpt
   profiles:
     active: dev

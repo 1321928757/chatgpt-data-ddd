@@ -6,11 +6,11 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter
 
 /**
  * @author www.luckysj.top 刘仕杰
- * @description 服务组接口
+ * @description 渠道组，这里我们目前有两个渠道，分别是chatgpt和chatglm
  * @create 2023/12/15 17:35:37
  */
 public interface OpenAiGroupService {
 
-    void doMessageResponse(ChatProcessAggregate chatProcess, ResponseBodyEmitter emitter) throws JsonProcessingException;
+    void doMessageResponse(ChatProcessAggregate chatProcess, ResponseBodyEmitter emitter) throws Exception;
 
 }

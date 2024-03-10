@@ -8,6 +8,7 @@ import com.luckysj.chatgpt.data.domain.openai.service.IChatService;
 import com.luckysj.chatgpt.data.trigger.http.dto.ChatGPTRequestDTO;
 import com.luckysj.chatgpt.data.types.common.Constants;
 import com.luckysj.chatgpt.data.types.exception.ChatGPTException;
+import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
@@ -34,8 +35,9 @@ public class ChatGPTAIServiceController {
     @Resource
     private IAuthService authService;
 
-    // 接口测试 curl -X POST http://localhost:7070/api/v1/chatgpt/chat/completions -H "Content-Type: application/json" -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvZ2RiNDZEYVl4TjZubGlxamV2ZXFuWk1mcW1JIiwib3BlbklkIjoib2dkYjQ2RGFZeE42bmxpcWpldmVxblpNZnFtSSIsImV4cCI6MTcwMjM3MTI1OCwiaWF0IjoxNzAxNzY2NDU4LCJqdGkiOiIwNTY0YjlhNC0xZjA4LTRkOGItYmJkOC03MmVhOTU2MTIwNjcifQ.mM-qXHMAY6_xdpEGF9I_dOwiwfoKUxyFH_jINSaTeB4" -d "{\"messages\":[{\"content\":\"写一个java冒泡排序\",\"role\":\"user\"}],\"model\":\"gpt-3.5-turbo\"}"
-    @RequestMapping(value = "chatgpt/chat/completions", method = RequestMethod.POST)
+    // 接口测试 curl -X POST http://localhost:7070/api/v1/chatgpt/chat/completions -H "Content-Type: application/json" -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTQ1MTQiLCJvcGVuSWQiOiIxMTQ1MTQiLCJleHAiOjE3MDkyOTcxOTAsImlhdCI6MTcwODY5MjM5MCwianRpIjoiOWYyNjFiMjgtNjNiOC00YzAwLWJmZDMtNmI1NDRiYzc2YTE4In0.x9eXcOJr6QQYn81397ch7T2Ejk_75pybXSS-5RixOfc" -d "{\"messages\":[{\"content\":\"写一个java冒泡排序\",\"role\":\"user\"}],\"model\":\"gpt-3.5-turbo\"}"
+    @Timed(value="chat_completions_http",description="请求对话接口")
+    @PostMapping(value = "chatgpt/chat/completions")
     public ResponseBodyEmitter completionsStream(@RequestBody ChatGPTRequestDTO request, @RequestHeader("Authorization") String token, HttpServletResponse response) {
         log.info("流式问答请求开始，使用模型：{} 请求信息：{}", request.getModel(), JSON.toJSONString(request.getMessages()));
         try {
@@ -61,7 +63,7 @@ public class ChatGPTAIServiceController {
             // 3.获取openid
             String openid = authService.parseOpenid(token);
 
-            // 2. 构建参数
+            // 2. 构建 贯穿整个业务流程的聚合对象
             ChatProcessAggregate chatProcessAggregate = ChatProcessAggregate.builder()
                     .openid(openid)
                     .model(request.getModel())
@@ -77,7 +79,7 @@ public class ChatGPTAIServiceController {
             // 3. 请求结果&返回
             return chatService.completions(emitter, chatProcessAggregate);
         } catch (Exception e) {
-            log.error("流式应答，请求模型：{} 发生异常", request.getModel(), e);
+            log.error("流式应答，请求模型：{} 发生异常 {}", request.getModel(), e.getMessage());
             throw new ChatGPTException(e.getMessage());
         }
     }

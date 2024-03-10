@@ -23,23 +23,39 @@ app:
 spring:
   datasource:
     username: root
-    password: lsj20030222
-    url: jdbc:mysql://localhost:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+    password: lsj114514
+    url: jdbc:mysql://154.12.27.76:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
-  hikari:
-    pool-name: Retail_HikariCP
-    minimum-idle: 15 #最小空闲连接数量
-    idle-timeout: 180000 #空闲连接存活最大时间，默认600000（10分钟）
-    maximum-pool-size: 25 #连接池最大连接数，默认是10
-    auto-commit: true  #此属性控制从池返回的连接的默认自动提交行为,默认值：true
-    max-lifetime: 1800000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
-    connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
-    connection-test-query: SELECT 1
-  type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: Retail_HikariCP
+      minimum-idle: 15 #最小空闲连接数量
+      idle-timeout: 180000 #空闲连接存活最大时间，默认600000（10分钟）
+      maximum-pool-size: 25 #连接池最大连接数，默认是10
+      auto-commit: true  #此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      max-lifetime: 1800000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
+      connection-test-query: SELECT 1
+    type: com.zaxxer.hikari.HikariDataSource
 
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+# Redisson客户端
+redis:
+  sdk:
+    config:
+      host: 154.12.27.76
+      port: 6379
+      password: lsj114514
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
 
 # 线程池配置
 thread:
@@ -56,10 +72,13 @@ thread:
 chatgpt:
   sdk:
     config:
+      # 状态；true = 开启、false 关闭
+      enabled: true
       # 官网地址 https://api.openai.com/,国内代理地址 https://api.openai-proxy.com/
-      api-host: https://api.openai-proxy.com/
+#      api-host: https://api.openai.com/
+      api-host: https://chatapi.a3e.top/
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: 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
+      api-key: sk-cRdJvyqAGsmO4cal582a4591090d49C6818dEe0768FaCd41
       # 认证token，这个配置暂时没用到，假如自己搭建了gpt的代理转发地址，而不想让这代理网站公开使用，就可以加一层token校验，限制使用
       auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
 
@@ -86,9 +105,9 @@ pay:
     # 支付宝网关地址
     url: https://openapi-sandbox.dl.alipaydev.com/gateway.do
     # 二维码的跳转地址，这里指向我们的支付接口
-    qrcode_url: http://192.168.27.91:7070/api/v1/sale/requestpay?payNo=%s
+    qrcode_url: http://www.luckysj.site/api/v1/sale/requestpay?payNo=%s
     # 支付宝支付结果通知地址,luckysj.natapp1.cc为内网穿透地址
-    notify_url: http://luckysj.natapp1.cc/api/v1/sale/paynotify
+    notify_url: http://www.luckysj.site/api/v1/sale/paynotify
 
 # 微信公众号配置信息
 # originalid：原始ID
@@ -100,6 +119,25 @@ wx:
     appid: wxc7b0c2397f036d02
     token: b8b6
 
+# 监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有端点，包括自定义端点
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      show-details: always # 显示详细的健康检查信息
+    prometheus:
+      enabled: true # 启用Prometheus端点
+  metrics:
+    export:
+      prometheus:
+        enabled: true # 启用Prometheus
+      jmx:
+        enabled: true # 启用JMX监控
 
 # 日志
 logging:

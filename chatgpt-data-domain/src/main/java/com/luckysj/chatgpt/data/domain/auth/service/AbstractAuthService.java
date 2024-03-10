@@ -44,8 +44,8 @@ public abstract class AbstractAuthService implements IAuthService{
 
     @Override
     public AuthStateEntity doLogin(String code) {
-        // 1. 初步格式校验，验证码应为4位的数字
-        if(!code.matches("\\d{4}")){
+        // 1. 初步格式校验，验证码应为6到8位的数字
+        if(!code.matches("\\d{6,8}")){
             log.info("鉴权失败，验证码格式错误：{}", code);
             return AuthStateEntity.builder()
                     .code(AuthTypeVo.CODE_INVALIDATION.getCode())
@@ -59,7 +59,6 @@ public abstract class AbstractAuthService implements IAuthService{
             return authStateEntity;
         }
 
-
         // 3. 如果用户账号不存在，则添加用户账号
         String openId = authStateEntity.getOpenId();
         boolean addResult = iAuthRepository.insertUserIfNotExist(openId);
@@ -68,7 +67,7 @@ public abstract class AbstractAuthService implements IAuthService{
             throw new ChatGPTException("插入用户账号新数据时出错，openid:" + openId);
         }
 
-        // 4. 获取 Token 并返回
+        // 4. 创建 JWT令牌 并返回
         Map<String, Object> chaim = new HashMap<>();
         chaim.put("openId", authStateEntity.getOpenId());
         String token = encode(openId, 7 * 24 * 60 * 60 * 1000, chaim);
@@ -144,39 +143,5 @@ public abstract class AbstractAuthService implements IAuthService{
         }
     }
 
-    @Override
-    public AuthStateEntity getAuthTest() {
-        // 生成虚拟身份信息
-        String openid = "xfg";
-        String code = "2133";
-        codeCache.put(code, openid);
-        codeCache.put(openid, code);
-        AuthStateEntity authStateEntity = AuthStateEntity.builder()
-                .code(AuthTypeVo.CODE_SUCCESS.getCode())
-                .info(AuthTypeVo.CODE_SUCCESS.getInfo())
-                .openId(openid)
-                .build();
 
-        Map<String, Object> chaim = new HashMap<>();
-        chaim.put("openId", authStateEntity.getOpenId());
-        String token = encode(authStateEntity.getOpenId(), 7 * 24 * 60 * 60 * 1000, chaim);
-        authStateEntity.setToken(token);
-        return authStateEntity;
-    }
-
-    @Override
-    public String getAuthCode(String openid) {
-        // 缓存验证码
-        String isExistCode = codeCache.getIfPresent(openid);
-
-        // 判断验证码 - 不考虑验证码重复问题
-        if (StringUtils.isBlank(isExistCode)) {
-            // 创建验证码
-            String code = RandomStringUtils.randomNumeric(4);
-            codeCache.put(code, openid);
-            codeCache.put(openid, code);
-            isExistCode = code;
-        }
-        return isExistCode;
-    }
 }

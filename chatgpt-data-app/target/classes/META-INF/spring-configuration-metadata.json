@@ -16,6 +16,11 @@
       "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
     },
     {
+      "name": "redis.sdk.config",
+      "type": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties"
+    },
+    {
       "name": "thread.pool.executor.config",
       "type": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties",
       "sourceType": "com.luckysj.chatgpt.data.config.ThreadPoolConfigProperties"
@@ -122,6 +127,81 @@
       "type": "java.lang.String",
       "description": "支付宝网关地址",
       "sourceType": "com.luckysj.chatgpt.data.config.AliPayConfigProperties"
+    },
+    {
+      "name": "redis.sdk.config.connect-timeout",
+      "type": "java.lang.Integer",
+      "description": "设置连接超时时间（单位：毫秒），默认为10000",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 10000
+    },
+    {
+      "name": "redis.sdk.config.host",
+      "type": "java.lang.String",
+      "description": "host:ip",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties"
+    },
+    {
+      "name": "redis.sdk.config.idle-timeout",
+      "type": "java.lang.Integer",
+      "description": "设置连接的最大空闲时间（单位：毫秒），超过该时间的空闲连接将被关闭，默认为10000",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 10000
+    },
+    {
+      "name": "redis.sdk.config.keep-alive",
+      "type": "java.lang.Boolean",
+      "description": "设置是否保持长连接，默认为true",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "redis.sdk.config.min-idle-size",
+      "type": "java.lang.Integer",
+      "description": "设置连接池的最小空闲连接数，默认为10",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 10
+    },
+    {
+      "name": "redis.sdk.config.password",
+      "type": "java.lang.String",
+      "description": "账密",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties"
+    },
+    {
+      "name": "redis.sdk.config.ping-interval",
+      "type": "java.lang.Integer",
+      "description": "设置定期检查连接是否可用的时间间隔（单位：毫秒），默认为0，表示不进行定期检查",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.sdk.config.pool-size",
+      "type": "java.lang.Integer",
+      "description": "设置连接池的大小，默认为64",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 64
+    },
+    {
+      "name": "redis.sdk.config.port",
+      "type": "java.lang.Integer",
+      "description": "端口",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.sdk.config.retry-attempts",
+      "type": "java.lang.Integer",
+      "description": "设置连接重试次数，默认为3",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "redis.sdk.config.retry-interval",
+      "type": "java.lang.Integer",
+      "description": "设置连接重试的间隔时间（单位：毫秒），默认为1000",
+      "sourceType": "com.luckysj.chatgpt.data.config.RedisCientConfigProperties",
+      "defaultValue": 1000
     },
     {
       "name": "thread.pool.executor.config.block-queue-size",

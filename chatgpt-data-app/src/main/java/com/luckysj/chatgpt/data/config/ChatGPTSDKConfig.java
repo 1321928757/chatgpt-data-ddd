@@ -5,7 +5,9 @@ import cn.bugstack.chatgpt.session.OpenAiSession;
 import cn.bugstack.chatgpt.session.OpenAiSessionFactory;
 import cn.bugstack.chatgpt.session.defaults.DefaultOpenAiSessionFactory;
 import lombok.Data;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,8 +17,10 @@ import org.springframework.context.annotation.Configuration;
  * @create 2023-12-04 18：53
  */
 @Configuration
+@EnableConfigurationProperties(ChatGPTSDKConfigProperties.class)
 public class ChatGPTSDKConfig {
-    @Bean
+    @Bean(name = "chatGPTOpenAiSession")
+    @ConditionalOnProperty(value = "chatgpt.sdk.config.enabled", havingValue = "true", matchIfMissing = false)
     public OpenAiSession openAiSession(ChatGPTSDKConfigProperties properties) {
         // 1. 配置文件
         cn.bugstack.chatgpt.session.Configuration configuration = new cn.bugstack.chatgpt.session.Configuration();

@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * @create 2023-12-04 18：53
  */
 @Data
-@Configuration
 @ConfigurationProperties(prefix = "chatgpt.sdk.config", ignoreInvalidFields = true)
 public class ChatGPTSDKConfigProperties {
     /** openai 代理地址 */

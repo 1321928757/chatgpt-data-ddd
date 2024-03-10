@@ -88,7 +88,11 @@ public class OrderRepository implements IOrderRepository {
         openAIOrderPO.setOrderId(payOrderEntity.getOrderId());
         openAIOrderPO.setPayUrl(payOrderEntity.getPayUrl());
         openAIOrderPO.setPayStatus(payOrderEntity.getPayStatus().getCode());
-        openAIOrderDao.updateOrderPayInfo(openAIOrderPO);
+        try {
+            openAIOrderDao.updateOrderPayInfo(openAIOrderPO);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

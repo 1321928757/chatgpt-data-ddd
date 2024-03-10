@@ -15,13 +15,15 @@ public class ChatGPTException extends RuntimeException{
     }
 
     public ChatGPTException(String code, String message) {
+        super(message);
         this.code = code;
         this.message = message;
     }
 
     public ChatGPTException(String code, String message, Throwable cause) {
+        super(message);
+        super.initCause(cause);
         this.code = code;
         this.message = message;
-        super.initCause(cause);
     }
 }

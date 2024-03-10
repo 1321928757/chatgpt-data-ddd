@@ -33,13 +33,6 @@ public interface IAuthService {
     String parseOpenid(String token);
 
     /**
-     * @description 本地获取身份测试（开发环境）
-     * @return
-     * @date 2023/12/05 15:00:10
-     */
-    AuthStateEntity getAuthTest();
-
-    /**
      * @description 本地获取验证码
      * @return
      * @date 2023/12/05 15:00:10

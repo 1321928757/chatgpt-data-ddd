@@ -39,8 +39,6 @@ import java.util.Map;
 @Service
 public class OrderService extends AbstractOrderService {
 
-
-
     @Override
     protected OrderEntity doSaveOrder(String openid, ProductEntity productEntity) {
         OrderEntity orderEntity = new OrderEntity();

@@ -13,4 +13,8 @@ public interface IOpenAiRepository {
 
     UserAccountQuotaEntity queryUserAccount(String openid);
 
+    void putRedisVisitCount(String key, Integer value, Long time);
+
+    int getRedisVisitCount(String key);
+
 }

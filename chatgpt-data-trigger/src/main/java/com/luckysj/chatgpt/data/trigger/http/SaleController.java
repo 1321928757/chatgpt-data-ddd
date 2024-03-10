@@ -21,6 +21,7 @@ import com.luckysj.chatgpt.data.types.exception.ChatGPTException;
 import com.luckysj.chatgpt.data.types.model.Response;
 import com.luckysj.chatgpt.data.types.util.QRCodeUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RTopic;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -51,8 +52,10 @@ public class SaleController {
     private AliPayConfig aliPayConfig;
     @Resource
     private AlipayClient alipayClient;
-    @Resource
-    private EventBus eventBus; //事件总线，用来发布消息
+    // @Resource
+    // private EventBus eventBus; //事件总线，用来发布消息
+    @Resource(name = "delivery")
+    private RTopic redisTopic;
 
     /**
     * @description 查询商品列表
@@ -125,7 +128,7 @@ public class SaleController {
             assert null != openid;
             log.info("用户商品下单，根据商品ID创建支付单开始 openid:{} productId:{}", openid, productId);
 
-            // 构建购物车参数
+            // 封装参数
             ShopCartEntity shopCartEntity = ShopCartEntity.builder()
                     .openid(openid)
                     .productId(productId).build();
@@ -243,7 +246,8 @@ public class SaleController {
                     boolean isSuccess = orderService.changeOrderPaySuccess(orderId, out_trade_no, total_amount, pay_time);
                     // 发布发货消息
                     if(isSuccess){
-                        eventBus.post(orderId);
+                        // eventBus.post(orderId);
+                        redisTopic.publish(orderId);
                     }
                 } else if (AliPayTradeTypeVo.TRADE_FINISHED.getCode().equals(trade_status)) {
                     // 交易结束，不可退款。

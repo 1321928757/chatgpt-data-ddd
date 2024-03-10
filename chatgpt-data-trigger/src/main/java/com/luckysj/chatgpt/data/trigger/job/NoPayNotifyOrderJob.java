@@ -9,7 +9,9 @@ import com.google.common.eventbus.EventBus;
 
 import com.luckysj.chatgpt.data.domain.order.model.valobj.AliPayTradeTypeVo;
 import com.luckysj.chatgpt.data.domain.order.service.IOrderService;
+import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RTopic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -35,15 +37,19 @@ public class NoPayNotifyOrderJob {
     @Resource
     private IOrderService orderService;
 
-    @Resource
-    private EventBus eventBus;
+    // @Resource
+    // private EventBus eventBus;
+
+    @Resource(name = "delivery")
+    private RTopic redisTopic;
 
     @Resource
     private AlipayClient alipayClient;
 
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
 
-    @Scheduled(cron = "0/30 * * * * ?") //一分钟执行一次
+    @Timed(value="no_pay_notify_order_job",description="定时任务，订单支付状态更新")
+    @Scheduled(cron = "0 0/3 * * * ?") //三分钟执行一次
     public void exec() {
         try {
             List<String> orderIds = orderService.queryNoPayNotifyOrder();
@@ -75,7 +81,8 @@ public class NoPayNotifyOrderJob {
                         boolean isSuccess = orderService.changeOrderPaySuccess(orderId, transactionId, totalAmount, successTime);
                         if (isSuccess) {
                             // 发布消息
-                            eventBus.post(orderId);
+                            // eventBus.post(orderId);
+                            redisTopic.publish(orderId);
                         }
                     }
                 } else {

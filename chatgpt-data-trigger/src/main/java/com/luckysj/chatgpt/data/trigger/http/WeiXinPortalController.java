@@ -5,6 +5,7 @@ import com.luckysj.chatgpt.data.domain.weixin.model.entity.UserBehaviorMessageEn
 import com.luckysj.chatgpt.data.domain.weixin.service.IWeiXinBehaviorService;
 import com.luckysj.chatgpt.data.domain.weixin.service.IWeiXinValidateService;
 import com.luckysj.chatgpt.data.types.sdk.weixin.XmlUtil;
+import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
@@ -65,6 +66,7 @@ public class WeiXinPortalController {
         }
     }
 
+    @Timed(value="weixin_handle_message_http",description="微信处理转发消息接口")
     @PostMapping(produces = "application/xml; charset=UTF-8")
     public String post(@PathVariable String appid,
                        @RequestBody String requestBody,

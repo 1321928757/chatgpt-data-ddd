@@ -6,6 +6,7 @@ import com.luckysj.chatgpt.data.domain.openai.model.aggregates.ChatProcessAggreg
 import com.luckysj.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.UserAccountQuotaEntity;
 import com.luckysj.chatgpt.data.domain.openai.model.valobj.LogicCheckTypeVO;
+import com.luckysj.chatgpt.data.domain.openai.repository.IOpenAiRepository;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.ILogicFilter;
 import com.luckysj.chatgpt.data.domain.openai.service.rule.factory.DefaultLogicFactory;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,7 @@ import javax.annotation.Resource;
 
 /**
  * @author www.luckysj.top 刘仕杰
- * @description 访问次数校验规则
+ * @description 访问总次数校验规则
  * @create 2023/12/08 17:02:36
  */
 @Slf4j
@@ -25,21 +26,20 @@ import javax.annotation.Resource;
 @LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.ACCESS_LIMIT)
 public class AccessLimitFilter implements ILogicFilter<UserAccountQuotaEntity> {
 
-    // 访问频次限制
+    // 访问限制次数
     @Value("${app.config.limit-count}")
     private Integer limitCount;
 
-    // 访问频次时限
+    // 访问时间周期
     @Value("${app.config.limit-count-time}")
-    private Integer limitCountTime;
+    private Long limitCountTime;
 
     // 访问白名单
     @Value("${app.config.white-list}")
     private String whiteListStr;
 
-    // 访问次数缓存
     @Resource
-    private Cache<String, Integer> visitCache;
+    private IOpenAiRepository openAiRepository;
 
     @Override
     public RuleLogicEntity<ChatProcessAggregate> fileter(ChatProcessAggregate chatProcess, UserAccountQuotaEntity userData) throws Exception {
@@ -52,16 +52,16 @@ public class AccessLimitFilter implements ILogicFilter<UserAccountQuotaEntity> {
         }
 
         String openid = chatProcess.getOpenid();
-        // 判断访问次数
-        int visitCount = visitCache.get(openid, () -> 0);
+        // 判断在时间周期内的访问次数
+        int visitCount = openAiRepository.getRedisVisitCount(openid);
         if (visitCount < limitCount) {
-            visitCache.put(openid, visitCount + 1);
+            openAiRepository.putRedisVisitCount(openid, visitCount + 1, limitCountTime *  60 * 1000);
             return RuleLogicEntity.<ChatProcessAggregate>builder()
                     .type(LogicCheckTypeVO.SUCCESS).data(chatProcess).build();
         }
 
         return RuleLogicEntity.<ChatProcessAggregate>builder()
-                .info("近" + limitCountTime + "分钟访问达到次数上限" + limitCount + "次，请稍后重试！")
+                .info("账户在" + limitCountTime + "分钟内访问次数超过" + limitCount + "次,访问过于频繁,请稍后重试！")
                 .type(LogicCheckTypeVO.REFUSE).data(chatProcess).build();
     }
 }

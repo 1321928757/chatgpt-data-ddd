@@ -5,9 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author www.luckysj.top 刘仕杰
  * @description 微信公众号消息类型值对象，用于描述对象属性的值，为值对象。
- * @create 2023-08-05 17:20
+ * @create 2023/12/17 21:17:21
  */
 @Getter
 @NoArgsConstructor
