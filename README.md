@@ -1,23 +1,17 @@
-# chatgpt-data-DDD
+# 大语言模型服务平台 - By 刘仕杰
 
-#### 介绍
-使用DDD架构设计的chatgpt对接系统
+基于DDD架构设计的大语言模型服务平台，使用了个人开发的chatgpt-sdk-java与chatglm-sdk-java服务会话SDK进行请求应答，整体项目分层清晰，综合运用策略，工厂，模板等设计模式编写代码，代码逻辑清晰
 
-#### 技术栈
-软件架构说明
+---
 
+>**作者**：LuckySJ-刘仕杰 - 个人简历博客 [**www.luckysj.space**](https://www.luckysj.space/)
 
-#### 安装教程
+## 主要功能
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. AIGC服务(大模型生成式服务)，支持消费额度限制，模型使用限制等功能
+2. 对接微信公众号，转发公众号消息完成鉴权
+3. 对接支付宝沙箱完成支付系统，自由购买对话额度
 
-#### 使用说明
+## 技术栈
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-
-
+SpringBoot、MyBatis、MySQL、Redis、Guava、OKHttp3、RabbitMQ。
