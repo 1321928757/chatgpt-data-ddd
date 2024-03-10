@@ -1,0 +1,605 @@
+23-12-11.20:45:16.351 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 12256 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.20:45:16.351 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.20:45:17.553 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.20:45:17.561 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:45:17.561 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.20:45:17.561 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.20:45:17.746 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.20:45:17.746 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1379 ms
+23-12-11.20:45:19.018 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:45:19.034 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 54434 (http) with context path ''
+23-12-11.20:45:19.042 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.993 seconds (JVM running for 3.631)
+23-12-11.20:45:19.070 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@51bf5add] to prepare test instance [com.luckysj.chatgpt.data.AliPayTest@2cb2fc20]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.luckysj.chatgpt.data.AliPayTest': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'pay.alipay.APP_ID' in value "${pay.alipay.APP_ID}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'pay.alipay.APP_ID' in value "${pay.alipay.APP_ID}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 71 common frames omitted
+23-12-11.20:46:16.327 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 17888 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.20:46:16.327 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.20:46:17.339 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.20:46:17.343 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:46:17.343 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.20:46:17.343 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.20:46:17.456 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.20:46:17.456 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1117 ms
+23-12-11.20:46:18.624 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:46:18.640 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 54783 (http) with context path ''
+23-12-11.20:46:18.648 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.6 seconds (JVM running for 3.256)
+23-12-11.20:46:19.591 [main            ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2023-12-11 20:46:19^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=DPDkRoKAIud8IVecLdjmn4OQy/4iPdT2ey8gsCZMwN4d71WR9/RucFRXuYO4l058yB436E5QzWUwcpskZBafsu7GtpZ0D7qxjN6kNGvbQ3QZ0sCQ/DjbwVKLqSZJrzCv607XkTgumu9nSrcM9/NAoK+HCUTuMD0+UT6wHf98NmdywvEIFjhnDBhvzPmeg/e/Wv8TLn3v8xykbttRksUZYHK0cdnZfNRy8jwxuZt10f3yMR4YxNc3IRSY/2JQhp0fFc795fejs0Amfw14RBrgCueeNiMQWZ0No7PVdh3v7Cp+KBFvJadfXOJ5ns5QDsCr6GSZlkR92m1KxHok3ad1eA==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2023-12-11 20:46:18^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"202210100010101002"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"202210100010101002","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"bKLG3kZPwbouGA2uaRIl2ZET31HoHZOp7xieFehmMa4jMPoJWizxMkJUUnKXoTIrGTNnqkNvnGDNbCYGCusTWLOXiVwa0oF5NeDNBeUu0abhFglH8cTZiWS2Wg3Xn3O0/m9YcObH67DUDUjeVxMjLnOoUyHP2nUe7b1aPe211XeY3Yxb0b7BpB6EUkARd0jFZFf7bCNRUVk2qrFhp9rkg6GOMBy5wHTlkzgaaTe+3XwhkZKJrH7gO5bWBqtAQseMue35V1pv96nhUFgFyUJ+y0++iy0zgx9XK/9C1BCUCFAUawBik44t2QEIHyt2WV7JSsMGuKmFy6QXTSHjUdDC/A=="}^_^22ms,606ms,24ms
+23-12-11.20:51:00.177 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 12380 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.20:51:00.177 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.20:51:01.178 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.20:51:01.186 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:51:01.186 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.20:51:01.186 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.20:51:01.311 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.20:51:01.311 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1122 ms
+23-12-11.20:51:02.524 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:51:02.540 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 56205 (http) with context path ''
+23-12-11.20:51:02.544 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.669 seconds (JVM running for 3.36)
+23-12-11.20:51:20.249 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 20296 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.20:51:20.249 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.20:51:21.236 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.20:51:21.244 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:51:21.244 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.20:51:21.244 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.20:51:21.353 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.20:51:21.353 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1092 ms
+23-12-11.20:51:22.555 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:51:22.571 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 56313 (http) with context path ''
+23-12-11.20:51:22.579 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.615 seconds (JVM running for 3.277)
+23-12-11.20:51:24.396 [main            ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2023-12-11 20:51:24^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=6G2OH3zVZ9ftE3+NwC8mQRzZhmuBETPujW0IjlktB+Xp2p0aCD9RppmxcuR7HvUiJmqHX2smV6dXGxBj95+skN8E+V0M46++VFRY/h/6bhJwGusWGLsahGXwV4IVuZ3hKsDZjNxj12hV24D5srE5UPwwwiOwwWyRvKQKV8u1q5OaHdgqEwJB7YagJosCOKT2seHWBHG4g6HKQfnOhiPK0pDSFQQE8Xz4enjX+zBXInOFAibDwiS/HVu6Mx3s2JgIfC03j3SlCxVU3RloEg03xuoXeNn8SuXqPTLCOU6kCzGvULufnFS1HNf8jSMD0pQ0x9qlCfE+X8JrikF9fzUjZg==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2023-12-11 20:51:22^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"202210100010101002"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"202210100010101002","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"bKLG3kZPwbouGA2uaRIl2ZET31HoHZOp7xieFehmMa4jMPoJWizxMkJUUnKXoTIrGTNnqkNvnGDNbCYGCusTWLOXiVwa0oF5NeDNBeUu0abhFglH8cTZiWS2Wg3Xn3O0/m9YcObH67DUDUjeVxMjLnOoUyHP2nUe7b1aPe211XeY3Yxb0b7BpB6EUkARd0jFZFf7bCNRUVk2qrFhp9rkg6GOMBy5wHTlkzgaaTe+3XwhkZKJrH7gO5bWBqtAQseMue35V1pv96nhUFgFyUJ+y0++iy0zgx9XK/9C1BCUCFAUawBik44t2QEIHyt2WV7JSsMGuKmFy6QXTSHjUdDC/A=="}^_^16ms,1551ms,16ms
+23-12-11.20:52:20.547 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 9660 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.20:52:20.547 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.20:52:21.590 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.20:52:21.597 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:52:21.597 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.20:52:21.597 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.20:52:21.720 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.20:52:21.720 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1161 ms
+23-12-11.20:52:22.963 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.20:52:22.983 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 56598 (http) with context path ''
+23-12-11.20:52:22.991 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.733 seconds (JVM running for 3.389)
+23-12-11.21:00:58.509 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 21372 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:00:58.509 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.21:00:59.537 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:00:59.541 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:00:59.541 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:00:59.545 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:00:59.658 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:00:59.658 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1137 ms
+23-12-11.21:01:00.837 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:01:00.849 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 59107 (http) with context path ''
+23-12-11.21:01:00.857 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.646 seconds (JVM running for 3.331)
+23-12-11.21:01:01.591 [main            ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2023-12-11 21:01:01^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=x1iS5Kzq2ZEWB7k/vOIodQICqlx88zbiKa94bbMlaRoWTNJjTjI8fUWSnt30is8Ts2dBd3sA1QKxYVQdmkjVI+7dTlsmtJCln4myNHaJvaFQ1K3b5+VHCCp9a4nGgdPXQOkYBZAHtWKvPQl0fSZmjRfEmw0B5BogTlsfBnIw/g7OFCxrT6pGAypFXhoKCM5FEie29b+jfwP63exkVanXk/bzatxUMETJoI8JXEYpnrNv8spTN62hbJHmhdg/fQAykG9IDMis0ybZJDXePzgkaQMN/32+Lk7jxsu+oOEsilqosYJMUFbD7C3c9Fsfo+0iqq+gTB7xqksc9XFMYoATeQ==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2023-12-11 21:01:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"202210100010101002"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"202210100010101002","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"bKLG3kZPwbouGA2uaRIl2ZET31HoHZOp7xieFehmMa4jMPoJWizxMkJUUnKXoTIrGTNnqkNvnGDNbCYGCusTWLOXiVwa0oF5NeDNBeUu0abhFglH8cTZiWS2Wg3Xn3O0/m9YcObH67DUDUjeVxMjLnOoUyHP2nUe7b1aPe211XeY3Yxb0b7BpB6EUkARd0jFZFf7bCNRUVk2qrFhp9rkg6GOMBy5wHTlkzgaaTe+3XwhkZKJrH7gO5bWBqtAQseMue35V1pv96nhUFgFyUJ+y0++iy0zgx9XK/9C1BCUCFAUawBik44t2QEIHyt2WV7JSsMGuKmFy6QXTSHjUdDC/A=="}^_^16ms,482ms,12ms
+23-12-11.21:01:37.914 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 21012 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:01:37.914 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.21:01:38.914 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:01:38.922 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:01:38.922 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:01:38.922 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:01:39.034 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:01:39.034 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1108 ms
+23-12-11.21:01:40.253 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:01:40.264 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 59303 (http) with context path ''
+23-12-11.21:01:40.271 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.659 seconds (JVM running for 3.317)
+23-12-11.21:01:40.993 [main            ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2023-12-11 21:01:40^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=vLVS9U7FaXMJH/mIaiC/ytVQeTgErZufZx/28jY4kR4cabWj2dpUBRj+vSR3VCyBBwT8PcVTZSyvjKM4H3lTNtzSaCF1lAWV9IwG8u0MShFk/PKp5FKHr4Gcrw6Qdr699fZkvKpJzqFKhJIo4CzO2DEfQ+GlAmNRO5DpN2N/If3P5sIVK/IuDTYZPll0h+q3Y9qayJAAqa6+AKmoxiK1cW+HnlHXjDWM3Vrs0ejFgTg0Etp9c8ybuWYrYzBIylEXYPUoaPojNWIJQViaX394lDRQUsWKZbKFan1i+KPk0BmUZm7B7xXg6QyN0a3XQIw80yqrYtkui3x4q0QOI36GUA==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2023-12-11 21:01:40^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"202210100010101002"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"202210100010101002","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"bKLG3kZPwbouGA2uaRIl2ZET31HoHZOp7xieFehmMa4jMPoJWizxMkJUUnKXoTIrGTNnqkNvnGDNbCYGCusTWLOXiVwa0oF5NeDNBeUu0abhFglH8cTZiWS2Wg3Xn3O0/m9YcObH67DUDUjeVxMjLnOoUyHP2nUe7b1aPe211XeY3Yxb0b7BpB6EUkARd0jFZFf7bCNRUVk2qrFhp9rkg6GOMBy5wHTlkzgaaTe+3XwhkZKJrH7gO5bWBqtAQseMue35V1pv96nhUFgFyUJ+y0++iy0zgx9XK/9C1BCUCFAUawBik44t2QEIHyt2WV7JSsMGuKmFy6QXTSHjUdDC/A=="}^_^20ms,452ms,16ms
+23-12-11.21:19:42.472 [main            ] INFO  AliPayTest             - Starting AliPayTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 16964 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:19:42.472 [main            ] INFO  AliPayTest             - The following 1 profile is active: "dev"
+23-12-11.21:19:43.539 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:19:43.543 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:19:43.547 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:19:43.547 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:19:43.673 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:19:43.673 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1189 ms
+23-12-11.21:19:44.882 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:19:44.897 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 65262 (http) with context path ''
+23-12-11.21:19:44.906 [main            ] INFO  AliPayTest             - Started AliPayTest in 2.733 seconds (JVM running for 3.381)
+23-12-11.21:19:45.773 [main            ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2023-12-11 21:19:45^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=1tmYy4w8w7uO3D9abCRbA2hn341eIpg2VoR6BZgR8qWyA+mOSmjRealGxXpCsLCkkV/kW8UJw6te04IRpDalxzdpmAoeNIcUAk0ZVpsgU20+66asamvCqm/u5Axq8P1B8sSr3diRwXdR49RuQvzvYjmpfCXcbwVg1OApGa2gflTNq60JLP5RPdiNY8+lTl9z071YIZPzfloVlbqMAcmcV+xX7lF/LhqdlxHjj2jLC1FIxR9JRNrc1hkaHL4xrNgAMCEJu82zwr+QySQuGcDF6Ky35MWW68ZZSbfuE9CQArqRT/jnUxGhYtUM7+MMqxB9XQQQxsmvtSmpaCeHjTEzBw==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2023-12-11 21:19:45^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"202210100010101002"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"202210100010101002","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"bKLG3kZPwbouGA2uaRIl2ZET31HoHZOp7xieFehmMa4jMPoJWizxMkJUUnKXoTIrGTNnqkNvnGDNbCYGCusTWLOXiVwa0oF5NeDNBeUu0abhFglH8cTZiWS2Wg3Xn3O0/m9YcObH67DUDUjeVxMjLnOoUyHP2nUe7b1aPe211XeY3Yxb0b7BpB6EUkARd0jFZFf7bCNRUVk2qrFhp9rkg6GOMBy5wHTlkzgaaTe+3XwhkZKJrH7gO5bWBqtAQseMue35V1pv96nhUFgFyUJ+y0++iy0zgx9XK/9C1BCUCFAUawBik44t2QEIHyt2WV7JSsMGuKmFy6QXTSHjUdDC/A=="}^_^19ms,610ms,12ms
+23-12-11.21:39:52.540 [main            ] INFO  UtilsTest              - Starting UtilsTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 11428 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:39:52.540 [main            ] INFO  UtilsTest              - The following 1 profile is active: "dev"
+23-12-11.21:39:53.548 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:39:53.553 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:39:53.553 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:39:53.553 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:39:53.667 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:39:53.667 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+23-12-11.21:39:54.430 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+23-12-11.21:39:54.434 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+23-12-11.21:39:54.438 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23-12-11.21:39:54.455 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 87 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 101 common frames omitted
+23-12-11.21:39:54.491 [main            ] INFO  UtilsTest              - Starting UtilsTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 11428 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:39:54.491 [main            ] INFO  UtilsTest              - The following 1 profile is active: "dev"
+23-12-11.21:39:54.724 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:39:54.728 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-2"]
+23-12-11.21:39:54.728 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:39:54.728 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:39:54.744 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:39:54.744 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 249 ms
+23-12-11.21:39:54.980 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+23-12-11.21:39:54.980 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+23-12-11.21:39:54.984 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23-12-11.21:39:54.984 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:53)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:46)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 86 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 100 common frames omitted
+23-12-11.21:39:54.984 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1169afe1] to prepare test instance [com.luckysj.chatgpt.data.UtilsTest@1df8b5b8]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 87 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.config.appid' in value "${wxpay.config.appid}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 101 common frames omitted
+23-12-11.21:41:29.478 [main            ] INFO  UtilsTest              - Starting UtilsTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 14580 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:41:29.478 [main            ] INFO  UtilsTest              - The following 1 profile is active: "dev"
+23-12-11.21:41:30.638 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:41:30.647 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:41:30.647 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:41:30.647 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:41:30.761 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:41:30.761 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1270 ms
+23-12-11.21:41:32.000 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:41:32.017 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 55844 (http) with context path ''
+23-12-11.21:41:32.023 [main            ] INFO  UtilsTest              - Started UtilsTest in 2.84 seconds (JVM running for 3.504)
+23-12-11.21:52:31.089 [main            ] INFO  UtilsTest              - Starting UtilsTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 18756 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:52:31.089 [main            ] INFO  UtilsTest              - The following 1 profile is active: "dev"
+23-12-11.21:52:32.158 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:52:32.162 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:52:32.166 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:52:32.166 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:52:32.280 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:52:32.280 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1175 ms
+23-12-11.21:52:33.845 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:52:33.861 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 58936 (http) with context path ''
+23-12-11.21:52:33.869 [main            ] INFO  UtilsTest              - Started UtilsTest in 3.066 seconds (JVM running for 3.729)
+23-12-11.21:57:03.943 [main            ] INFO  UtilsTest              - Starting UtilsTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 4488 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-11.21:57:03.947 [main            ] INFO  UtilsTest              - The following 1 profile is active: "dev"
+23-12-11.21:57:05.185 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-11.21:57:05.193 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:57:05.193 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-11.21:57:05.193 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-11.21:57:05.327 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-11.21:57:05.327 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1364 ms
+23-12-11.21:57:06.686 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-11.21:57:06.702 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 60310 (http) with context path ''
+23-12-11.21:57:06.710 [main            ] INFO  UtilsTest              - Started UtilsTest in 3.123 seconds (JVM running for 4.384)

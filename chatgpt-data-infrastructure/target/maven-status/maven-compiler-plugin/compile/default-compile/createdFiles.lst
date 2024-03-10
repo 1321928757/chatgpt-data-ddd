@@ -1,0 +1,15 @@
+com\luckysj\chatgpt\data\infrastructure\repository\OpenAiRepository.class
+com\luckysj\chatgpt\data\infrastructure\po\OpenAIOrderPO.class
+com\luckysj\chatgpt\data\infrastructure\po\OpenAIProductPO.class
+com\luckysj\chatgpt\data\infrastructure\dao\IOpenAIOrderDao.class
+com\luckysj\chatgpt\data\infrastructure\repository\AuthRepository.class
+com\luckysj\chatgpt\data\infrastructure\repository\WeiXinRepository.class
+com\luckysj\chatgpt\data\infrastructure\redis\IRedisService.class
+com\luckysj\chatgpt\data\infrastructure\dao\IOpenAIProductDao.class
+com\luckysj\chatgpt\data\infrastructure\repository\OrderRepository.class
+com\luckysj\chatgpt\data\infrastructure\po\OpenAIProductPO$OpenAIProductPOBuilder.class
+com\luckysj\chatgpt\data\infrastructure\redis\RedisService.class
+com\luckysj\chatgpt\data\infrastructure\po\UserAccountPO$UserAccountPOBuilder.class
+com\luckysj\chatgpt\data\infrastructure\dao\IUserAccountDao.class
+com\luckysj\chatgpt\data\infrastructure\po\UserAccountPO.class
+com\luckysj\chatgpt\data\infrastructure\po\OpenAIOrderPO$OpenAIOrderPOBuilder.class

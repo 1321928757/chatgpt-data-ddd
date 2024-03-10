@@ -1,0 +1,16 @@
+com\luckysj\chatgpt\data\trigger\mq\OrderPaySuccessListener.class
+com\luckysj\chatgpt\data\trigger\http\WeiXinPortalController.class
+com\luckysj\chatgpt\data\trigger\mq\OrderPaySuccessRedisListener.class
+com\luckysj\chatgpt\data\trigger\job\TimeoutCloseOrderJob.class
+com\luckysj\chatgpt\data\trigger\http\dto\SaleProductDTO.class
+com\luckysj\chatgpt\data\trigger\job\NoPayNotifyOrderJob.class
+com\luckysj\chatgpt\data\trigger\http\dto\MessageEntity$MessageEntityBuilder.class
+com\luckysj\chatgpt\data\trigger\http\ChatGPTAIServiceController.class
+com\luckysj\chatgpt\data\trigger\http\dto\ChatGPTRequestDTO$ChatGPTRequestDTOBuilder.class
+com\luckysj\chatgpt\data\trigger\http\dto\SaleProductDTO$SaleProductDTOBuilder.class
+com\luckysj\chatgpt\data\trigger\http\dto\ChoiceEntity.class
+com\luckysj\chatgpt\data\trigger\http\SaleController.class
+com\luckysj\chatgpt\data\trigger\job\OrderReplenishmentJob.class
+com\luckysj\chatgpt\data\trigger\http\AuthController.class
+com\luckysj\chatgpt\data\trigger\http\dto\ChatGPTRequestDTO.class
+com\luckysj\chatgpt\data\trigger\http\dto\MessageEntity.class

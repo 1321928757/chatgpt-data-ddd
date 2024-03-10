@@ -1,0 +1,54 @@
+24-02-20.11:02:12.256 [main            ] INFO  TongYiQianWenTest      - Starting TongYiQianWenTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 13500 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+24-02-20.11:02:12.257 [main            ] INFO  TongYiQianWenTest      - The following 1 profile is active: "dev"
+24-02-20.11:02:13.028 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-02-20.11:02:13.031 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-02-20.11:02:13.073 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+24-02-20.11:02:14.518 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+24-02-20.11:02:14.527 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+24-02-20.11:02:14.527 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-20.11:02:14.528 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-20.11:02:14.681 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-20.11:02:14.681 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2409 ms
+24-02-20.11:02:15.487 [main            ] INFO  Version                - Redisson 3.23.4
+24-02-20.11:02:16.709 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
+24-02-20.11:02:19.301 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
+24-02-20.11:02:21.511 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-02-20.11:02:21.574 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+24-02-20.11:02:21.585 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 57584 (http) with context path ''
+24-02-20.11:02:21.598 [main            ] INFO  TongYiQianWenTest      - Started TongYiQianWenTest in 9.687 seconds (JVM running for 10.459)
+24-02-20.11:50:16.572 [main            ] INFO  TongYiQianWenTest      - Starting TongYiQianWenTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 12784 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+24-02-20.11:50:16.573 [main            ] INFO  TongYiQianWenTest      - The following 1 profile is active: "dev"
+24-02-20.11:50:17.244 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-02-20.11:50:17.246 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-02-20.11:50:17.282 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+24-02-20.11:50:18.627 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+24-02-20.11:50:18.634 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+24-02-20.11:50:18.635 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-20.11:50:18.636 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-20.11:50:18.773 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-20.11:50:18.773 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2186 ms
+24-02-20.11:50:19.483 [main            ] INFO  Version                - Redisson 3.23.4
+24-02-20.11:50:20.679 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
+24-02-20.11:50:22.087 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
+24-02-20.11:50:24.246 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-02-20.11:50:24.329 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+24-02-20.11:50:24.342 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 55219 (http) with context path ''
+24-02-20.11:50:24.361 [main            ] INFO  TongYiQianWenTest      - Started TongYiQianWenTest in 8.106 seconds (JVM running for 8.851)
+24-02-20.11:50:40.403 [main            ] INFO  TongYiQianWenTest      - Starting TongYiQianWenTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 10740 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+24-02-20.11:50:40.404 [main            ] INFO  TongYiQianWenTest      - The following 1 profile is active: "dev"
+24-02-20.11:50:41.038 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-02-20.11:50:41.040 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-02-20.11:50:41.071 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-02-20.11:50:42.286 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+24-02-20.11:50:42.293 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+24-02-20.11:50:42.293 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-20.11:50:42.294 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-20.11:50:42.423 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-20.11:50:42.423 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2005 ms
+24-02-20.11:50:43.131 [main            ] INFO  Version                - Redisson 3.23.4
+24-02-20.11:50:44.288 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
+24-02-20.11:50:45.692 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
+24-02-20.11:50:47.898 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-02-20.11:50:47.988 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+24-02-20.11:50:47.998 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 55414 (http) with context path ''
+24-02-20.11:50:48.010 [main            ] INFO  TongYiQianWenTest      - Started TongYiQianWenTest in 7.918 seconds (JVM running for 8.636)

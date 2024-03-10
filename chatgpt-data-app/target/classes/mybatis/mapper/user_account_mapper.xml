@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.luckysj.chatgpt.data.infrastructure.dao.IUserAccountDao">
+
+    <resultMap id="userAccountMap" type="com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO">
+        <id column="id" property="id"/>
+        <result column="openid" property="openid"/>
+        <result column="total_quota" property="totalQuota"/>
+        <result column="surplus_quota" property="surplusQuota"/>
+        <result column="model_types" property="modelTypes"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+    <insert id="insert" parameterType="com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO">
+        INSERT INTO user_account (openid, total_quota, surplus_quota, model_types, status, create_time, update_time)
+        VALUES (#{openid}, #{totalQuota}, #{surplusQuota}, #{modelTypes}, #{status}, now(), now())
+    </insert>
+
+    <select id="queryUserAccount" parameterType="java.lang.String" resultMap="userAccountMap">
+        SELECT openid, total_quota, surplus_quota, model_types, status
+        FROM user_account
+        WHERE openid = #{openid}
+    </select>
+
+    <update id="subAccountQuota" parameterType="java.lang.String">
+        UPDATE user_account SET surplus_quota = surplus_quota - 1
+        WHERE openid = #{openid} AND surplus_quota > 0 AND status = 0
+    </update>
+
+    <update id="addAccountQuota" parameterType="com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO">
+        UPDATE user_account SET
+        total_quota = total_quota + #{totalQuota},
+        surplus_quota = surplus_quota + #{surplusQuota},
+        update_time = now()
+        WHERE openid = #{openid}
+    </update>
+
+</mapper>

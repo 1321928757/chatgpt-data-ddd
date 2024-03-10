@@ -1,0 +1,23 @@
+23-12-16.21:15:04.752 [main            ] INFO  TongYiQianWenTest      - Starting TongYiQianWenTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 10060 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-16.21:15:04.752 [main            ] INFO  TongYiQianWenTest      - The following 1 profile is active: "dev"
+23-12-16.21:15:06.162 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-16.21:15:06.171 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-16.21:15:06.171 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-16.21:15:06.171 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-16.21:15:06.318 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-16.21:15:06.318 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+23-12-16.21:15:07.882 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-16.21:15:07.907 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 50921 (http) with context path ''
+23-12-16.21:15:07.921 [main            ] INFO  TongYiQianWenTest      - Started TongYiQianWenTest in 3.481 seconds (JVM running for 4.241)
+23-12-16.21:17:52.704 [main            ] INFO  TongYiQianWenTest      - Starting TongYiQianWenTest using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 7804 (started by kitie in D:\IDEA_project\chatgpt-data\chatgpt-data-app)
+23-12-16.21:17:52.704 [main            ] INFO  TongYiQianWenTest      - The following 1 profile is active: "dev"
+23-12-16.21:17:53.882 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 0 (http)
+23-12-16.21:17:53.895 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-auto-1"]
+23-12-16.21:17:53.895 [main            ] INFO  StandardService        - Starting service [Tomcat]
+23-12-16.21:17:53.895 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+23-12-16.21:17:54.012 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+23-12-16.21:17:54.012 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1290 ms
+23-12-16.21:17:55.491 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-auto-1"]
+23-12-16.21:17:55.512 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 51797 (http) with context path ''
+23-12-16.21:17:55.522 [main            ] INFO  TongYiQianWenTest      - Started TongYiQianWenTest in 3.109 seconds (JVM running for 3.808)
+23-12-16.21:18:00.032 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
