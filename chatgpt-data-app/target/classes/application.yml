@@ -1,6 +1,0 @@
-
-spring:
-  config:
-    name: chatgpt
-  profiles:
-    active: dev
