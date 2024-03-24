@@ -38,6 +38,12 @@
             <artifactId>redisson-spring-boot-starter</artifactId>
             <version>${redisson-spring-boot-starter.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.luckysj</groupId>
+            <artifactId>chatgpt-data-types</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

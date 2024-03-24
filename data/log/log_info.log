@@ -1,200 +1,356 @@
-24-02-24.17:30:48.482 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 24324 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:30:48.483 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:30:49.181 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:30:49.184 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:30:49.219 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
-24-02-24.17:30:49.817 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:30:49.822 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:30:49.822 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:30:49.822 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:30:49.935 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:30:49.935 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1426 ms
-24-02-24.17:30:50.382 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:30:51.445 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:30:52.817 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:30:54.683 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:30:54.713 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:30:54.720 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:30:54.733 [main            ] INFO  Application            - Started Application in 6.576 seconds (JVM running for 7.438)
-24-02-24.17:30:55.061 [RMI TCP Connection(1)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:30:55.672 [RMI TCP Connection(3)-192.168.1.6] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:30:55.672 [RMI TCP Connection(3)-192.168.1.6] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:30:55.674 [RMI TCP Connection(3)-192.168.1.6] INFO  DispatcherServlet      - Completed initialization in 1 ms
-24-02-24.17:30:57.603 [RMI TCP Connection(1)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.17:33:00.444 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:36:00.404 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:39:00.395 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:40:00.403 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，补货补偿，不存在待发货的订单
-24-02-24.17:40:00.598 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
-24-02-24.17:41:34.004 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
-24-02-24.17:41:44.021 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
-24-02-24.17:41:49.893 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 23064 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:41:49.895 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:41:50.514 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:41:50.515 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:41:50.543 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-24-02-24.17:41:51.022 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:41:51.027 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:41:51.027 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:41:51.027 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:41:51.124 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:41:51.124 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1207 ms
-24-02-24.17:41:51.515 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:41:52.527 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:41:53.913 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:41:55.549 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:41:55.574 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:41:55.580 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:41:55.590 [main            ] INFO  Application            - Started Application in 5.973 seconds (JVM running for 6.71)
-24-02-24.17:41:55.881 [http-nio-7070-exec-9] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:41:55.881 [http-nio-7070-exec-9] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:41:55.882 [http-nio-7070-exec-9] INFO  DispatcherServlet      - Completed initialization in 1 ms
-24-02-24.17:41:56.132 [RMI TCP Connection(1)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:41:58.668 [RMI TCP Connection(1)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.17:42:00.424 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:42:56.523 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
-24-02-24.17:42:59.471 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
-24-02-24.17:43:04.076 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 25192 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:43:04.077 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:43:04.649 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:43:04.650 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:43:04.675 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-02-24.17:43:05.140 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:43:05.144 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:43:05.144 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:43:05.145 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:43:05.243 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:43:05.243 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1145 ms
-24-02-24.17:43:05.634 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:43:06.656 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:43:08.036 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:43:09.906 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:43:09.935 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:43:09.941 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:43:09.953 [main            ] INFO  Application            - Started Application in 6.146 seconds (JVM running for 6.803)
-24-02-24.17:43:10.282 [RMI TCP Connection(4)-192.168.1.6] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:43:10.282 [RMI TCP Connection(4)-192.168.1.6] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:43:10.283 [RMI TCP Connection(3)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:43:10.283 [RMI TCP Connection(4)-192.168.1.6] INFO  DispatcherServlet      - Completed initialization in 1 ms
-24-02-24.17:43:12.729 [RMI TCP Connection(3)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.17:44:09.938 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
-24-02-24.17:44:12.878 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
-24-02-24.17:44:17.356 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 22240 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:44:17.358 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:44:17.957 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:44:17.959 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:44:17.986 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-24-02-24.17:44:18.438 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:44:18.442 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:44:18.442 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:44:18.442 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:44:18.535 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:44:18.535 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1155 ms
-24-02-24.17:44:18.883 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:44:19.805 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:44:21.188 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:44:22.883 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:44:22.910 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:44:22.916 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:44:22.927 [main            ] INFO  Application            - Started Application in 5.828 seconds (JVM running for 6.53)
-24-02-24.17:44:23.563 [RMI TCP Connection(2)-192.168.1.6] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:44:23.563 [RMI TCP Connection(2)-192.168.1.6] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:44:23.565 [RMI TCP Connection(2)-192.168.1.6] INFO  DispatcherServlet      - Completed initialization in 2 ms
-24-02-24.17:44:23.565 [RMI TCP Connection(1)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:44:26.071 [RMI TCP Connection(1)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.17:45:00.435 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:45:35.848 [http-nio-7070-exec-4] INFO  RateLimiterAOP         - 限流拦截关键字为 request_ip
-24-02-24.17:45:48.264 [http-nio-7070-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
-24-02-24.17:45:51.262 [http-nio-7070-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
-24-02-24.17:48:00.399 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:50:00.403 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，补货补偿，不存在待发货的订单
-24-02-24.17:50:00.602 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
-24-02-24.17:51:00.407 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:54:00.409 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:54:56.520 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
-24-02-24.17:55:06.529 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
-24-02-24.17:55:13.357 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 25368 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:55:13.359 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:55:14.011 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:55:14.012 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:55:14.041 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-24-02-24.17:55:14.573 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:55:14.578 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:55:14.578 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:55:14.578 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:55:14.685 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:55:14.685 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1303 ms
-24-02-24.17:55:15.084 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:55:16.046 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:55:17.429 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:55:19.261 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:55:19.293 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:55:19.301 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:55:19.314 [main            ] INFO  Application            - Started Application in 6.222 seconds (JVM running for 6.968)
-24-02-24.17:55:19.990 [RMI TCP Connection(1)-192.168.1.6] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:55:19.990 [RMI TCP Connection(1)-192.168.1.6] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:55:19.991 [RMI TCP Connection(2)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:55:19.992 [RMI TCP Connection(1)-192.168.1.6] INFO  DispatcherServlet      - Completed initialization in 2 ms
-24-02-24.17:55:22.486 [RMI TCP Connection(2)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.17:57:00.428 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.17:58:02.019 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：dall-e-3 请求信息：[{"content":"你好","role":"user"},{"content":"你好！有什么可以帮助你的吗？","role":"system"},{"content":"生成一张油画
-","role":"user"}]
-24-02-24.17:58:41.551 [http-nio-7070-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：dall-e-3 请求信息：[{"content":"生成一张油画
-","role":"user"},{"content":"当前账户不支持使用 dall-e-3 模型！可以联系客服升级账户。","role":"system"},{"content":"生成一张油画","role":"user"}]
-24-02-24.17:59:09.221 [http-nio-7070-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：dall-e-3
-24-02-24.17:59:09.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
-24-02-24.17:59:12.430 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
-24-02-24.17:59:16.701 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 17040 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:59:16.703 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:59:17.320 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:59:17.323 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:59:17.352 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-24-02-24.17:59:17.895 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:59:17.900 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:59:17.902 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:59:17.902 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:59:18.016 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:59:18.016 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
-24-02-24.17:59:18.411 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:59:19.412 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:59:20.786 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:59:22.538 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:59:22.564 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:59:22.570 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:59:22.582 [main            ] INFO  Application            - Started Application in 6.123 seconds (JVM running for 6.867)
-24-02-24.17:59:22.873 [RMI TCP Connection(3)-192.168.1.6] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:59:22.873 [RMI TCP Connection(3)-192.168.1.6] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:59:22.875 [RMI TCP Connection(3)-192.168.1.6] INFO  DispatcherServlet      - Completed initialization in 2 ms
-24-02-24.17:59:22.875 [RMI TCP Connection(4)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:59:25.335 [RMI TCP Connection(4)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.17:59:37.822 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
-24-02-24.17:59:39.497 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
-24-02-24.17:59:44.427 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 27588 (D:\IDEA_project\chatgpt-data\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data)
-24-02-24.17:59:44.429 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-24.17:59:45.024 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-02-24.17:59:45.026 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-02-24.17:59:45.053 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-24-02-24.17:59:45.500 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
-24-02-24.17:59:45.504 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
-24-02-24.17:59:45.504 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-24.17:59:45.504 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-24.17:59:45.599 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-24.17:59:45.599 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1145 ms
-24-02-24.17:59:45.955 [main            ] INFO  Version                - Redisson 3.23.4
-24-02-24.17:59:46.922 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:59:48.309 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.95.154/154.12.95.154:6379
-24-02-24.17:59:49.969 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-02-24.17:59:49.995 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
-24-02-24.17:59:50.001 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
-24-02-24.17:59:50.013 [main            ] INFO  Application            - Started Application in 5.85 seconds (JVM running for 6.478)
-24-02-24.17:59:50.881 [RMI TCP Connection(2)-192.168.1.6] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-24.17:59:50.881 [RMI TCP Connection(2)-192.168.1.6] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-24.17:59:50.881 [RMI TCP Connection(2)-192.168.1.6] INFO  DispatcherServlet      - Completed initialization in 0 ms
-24-02-24.17:59:50.884 [RMI TCP Connection(3)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-02-24.17:59:53.374 [RMI TCP Connection(3)-192.168.1.6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-02-24.18:00:00.421 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
-24-02-24.18:00:00.619 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，补货补偿，不存在待发货的订单
-24-02-24.18:00:00.815 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
-24-02-24.18:00:06.036 [http-nio-7070-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：dall-e-3 请求信息：[{"content":"生成一张油画","role":"user"},{"content":"图画开始生成，平均时间为10s-20s,请耐心等待~
--------------------------------------
-","role":"system"},{"content":"生成一张油画","role":"user"}]
+24-03-24.20:00:53.482 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 24152 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:00:53.483 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:00:54.141 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:00:54.143 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:00:54.176 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-03-24.20:00:54.694 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:00:54.699 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:00:54.699 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:00:54.699 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:00:54.798 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:00:54.798 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
+24-03-24.20:00:55.234 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-24.20:00:55.930 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:00:56.474 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:00:57.132 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'delivery' available
+24-03-24.20:00:57.255 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-24.20:00:57.265 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-24.20:00:57.276 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'delivery' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'delivery' in your configuration.
+
+24-03-24.20:02:09.046 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 15608 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:02:09.048 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:02:09.663 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:02:09.664 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:02:09.689 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-03-24.20:02:10.183 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:02:10.187 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:02:10.188 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:02:10.188 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:02:10.290 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:02:10.290 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1209 ms
+24-03-24.20:02:10.676 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-24.20:02:11.278 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:02:11.813 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:02:12.667 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventBusListener' defined in class path resource [com/luckysj/chatgpt/data/config/GoogleGuavaCodeCacheConfig.class]: Unsatisfied dependency expressed through method 'eventBusListener' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+24-03-24.20:02:12.771 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-24.20:02:12.782 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-24.20:02:12.795 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method eventBusListener in com.luckysj.chatgpt.data.config.GoogleGuavaCodeCacheConfig required a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' in your configuration.
+
+24-03-24.20:03:51.835 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 29048 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:03:51.837 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:03:52.443 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:03:52.445 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:03:52.471 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-03-24.20:03:52.927 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:03:52.931 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:03:52.931 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:03:52.932 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:03:53.034 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:03:53.034 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1171 ms
+24-03-24.20:03:53.408 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-24.20:03:54.139 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:03:54.730 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:03:55.483 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventBusListener' defined in class path resource [com/luckysj/chatgpt/data/config/GoogleGuavaCodeCacheConfig.class]: Unsatisfied dependency expressed through method 'eventBusListener' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+24-03-24.20:03:55.590 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-24.20:03:55.600 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-24.20:03:55.613 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method eventBusListener in com.luckysj.chatgpt.data.config.GoogleGuavaCodeCacheConfig required a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' in your configuration.
+
+24-03-24.20:04:34.342 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 4264 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:04:34.344 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:04:34.970 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:04:34.971 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:04:34.995 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-03-24.20:04:35.468 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:04:35.472 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:04:35.473 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:04:35.473 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:04:35.572 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:04:35.572 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+24-03-24.20:04:35.756 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.common.cache.Cache<java.lang.String, java.lang.String>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-24.20:04:35.758 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-24.20:04:35.768 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-24.20:04:35.780 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.google.common.cache.Cache' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.google.common.cache.Cache' in your configuration.
+
+24-03-24.20:06:55.928 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 23384 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:06:55.930 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:06:56.546 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:06:56.548 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:06:56.573 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-03-24.20:06:57.061 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:06:57.065 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:06:57.066 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:06:57.066 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:06:57.168 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:06:57.168 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1216 ms
+24-03-24.20:06:57.531 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-24.20:06:58.203 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:06:58.817 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:07:00.536 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-24.20:07:00.607 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+24-03-24.20:07:00.621 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+24-03-24.20:07:00.622 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [154.201.80.213:5672]
+24-03-24.20:07:01.096 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#a323a5b:0/SimpleConnection@72585e83 [delegate=amqp://admin@154.201.80.213:5672/, localPort= 59586]
+24-03-24.20:07:02.072 [main            ] INFO  Application            - Started Application in 6.4 seconds (JVM running for 7.083)
+24-03-24.20:07:02.441 [RMI TCP Connection(1)-192.168.152.91] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-24.20:07:02.441 [RMI TCP Connection(1)-192.168.152.91] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-24.20:07:02.442 [RMI TCP Connection(1)-192.168.152.91] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-03-24.20:07:02.974 [RMI TCP Connection(3)-192.168.152.91] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-03-24.20:07:04.646 [RMI TCP Connection(3)-192.168.152.91] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-03-24.20:09:00.300 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:10:00.234 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，补货补偿，不存在待发货的订单
+24-03-24.20:10:00.452 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+24-03-24.20:12:00.371 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:12:34.787 [http-nio-7070-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：ERNIE_Bot_turbo 请求信息：[{"content":"你好","role":"user"},{"content":"","role":"system"},{"content":"123123","role":"user"}]
+24-03-24.20:12:34.813 [http-nio-7070-exec-5] ERROR AbstractAuthService    - jwt isVerify Err
+com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2024-03-02T09:45:37Z.
+	at com.auth0.jwt.JWTVerifier$BaseVerification.assertValidInstantClaim(JWTVerifier.java:346)
+	at com.auth0.jwt.JWTVerifier$BaseVerification.lambda$addMandatoryClaimChecks$17(JWTVerifier.java:308)
+	at com.auth0.jwt.JWTVerifier$BaseVerification$1.verify(JWTVerifier.java:405)
+	at com.auth0.jwt.JWTVerifier.verifyClaims(JWTVerifier.java:482)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:464)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:445)
+	at com.luckysj.chatgpt.data.domain.auth.service.AbstractAuthService.isVerify(AbstractAuthService.java:130)
+	at com.luckysj.chatgpt.data.domain.auth.service.AuthService.checkToken(AuthService.java:54)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:51)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController$$FastClassBySpringCGLIB$$c8ae12f9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at io.micrometer.core.aop.TimedAspect.processWithTimer(TimedAspect.java:221)
+	at io.micrometer.core.aop.TimedAspect.perform(TimedAspect.java:196)
+	at io.micrometer.core.aop.TimedAspect.timedMethod(TimedAspect.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController$$EnhancerBySpringCGLIB$$642aa329.completionsStream(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-03-24.20:12:43.942 [http-nio-7070-exec-9] INFO  RateLimiterAOP         - 限流拦截关键字为 request_ip
+24-03-24.20:12:52.327 [http-nio-7070-exec-1] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-03-24.20:12:55.463 [http-nio-7070-exec-4] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:114514 productId:1001
+24-03-24.20:12:56.218 [http-nio-7070-exec-4] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。openid: 114514 orderId: 671796600081 payUrl: http://www.luckysj.site/api/v1/sale/requestpay?payNo=671796600081
+24-03-24.20:12:56.219 [http-nio-7070-exec-4] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: 114514 productId: 1001 orderPay: PayOrderEntity{openid='114514', orderId='671796600081', payUrl='http://www.luckysj.site/api/v1/sale/requestpay?payNo=671796600081', payStatus=0: 等待支付}
+24-03-24.20:15:01.047 [scheduling-1    ] INFO  err                    - Summary^_^10000^_^null^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=HK+zxl8eUXcCQXFhnRKR5FsDZWOL/svSrDMGU2g9kM0WTO/tUeYQvNTUFtd7/dCljerHxfcOLF7eLkyBzUTNXJ36CDHHExYgxwlwNFjckTuuElx8/pUIEB6WsYka10RW664ugLzAXbyeeVL/bQ0+nNad5FbRq7MguO+Ru2lOA98xOnsN9bzs5pdxnu9Svi12TuaKKqi2Nnes24LtfxBqJhGulN4nb5S6yiY23Lr/GzFzThll3qMBQQFqq6ZSEerQ+ARCCN4Bn7vbIjVLynniYyHm2SJrzWg6lcZfV1/7XMxnHj8fMD8tfaIvfdXfx+vqv5VMT7/iuNyvb0rW4hxH9w==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2024-03-24 20:15:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"671796600081"}^_^22ms,694ms,20ms
+24-03-24.20:15:01.051 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，查询支付结果查询成功，支付状态为TRADE_SUCCESS，orderId is 671796600081
+24-03-24.20:15:01.466 [redisson-3-2    ] INFO  OrderPaySuccessRedisListener - 支付完成，开始发货。订单：671796600081
+24-03-24.20:15:02.145 [redisson-3-2    ] ERROR OrderPaySuccessRedisListener - 支付完成，发货失败。订单：671796600081
+java.lang.RuntimeException: updateOrderStatusDeliverGoodsCount update count is not equal 1
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository.deliverGoods(OrderRepository.java:138)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$FastClassBySpringCGLIB$$ec5142f2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$EnhancerBySpringCGLIB$$9a1988a8.deliverGoods(<generated>)
+	at com.luckysj.chatgpt.data.domain.order.service.OrderService.deliverGoods(OrderService.java:92)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:27)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:16)
+	at org.redisson.PubSubMessageListener.onMessage(PubSubMessageListener.java:79)
+	at org.redisson.client.RedisPubSubConnection.onMessage(RedisPubSubConnection.java:68)
+	at org.redisson.client.handler.CommandPubSubDecoder.lambda$enqueueMessage$2(CommandPubSubDecoder.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+24-03-24.20:15:41.982 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-03-24.20:15:42.233 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-03-24.20:16:59.144 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 19216 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:16:59.146 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:16:59.801 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:16:59.803 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:16:59.833 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-03-24.20:17:00.393 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:17:00.398 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:17:00.398 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:17:00.398 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:17:00.500 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:17:00.501 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1330 ms
+24-03-24.20:17:00.874 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-24.20:17:01.664 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:17:02.182 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:17:03.981 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-24.20:17:04.073 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+24-03-24.20:17:04.082 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+24-03-24.20:17:04.084 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [154.201.80.213:5672]
+24-03-24.20:17:04.587 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#a323a5b:0/SimpleConnection@12532e37 [delegate=amqp://admin@154.201.80.213:5672/, localPort= 52258]
+24-03-24.20:17:05.643 [main            ] INFO  Application            - Started Application in 6.791 seconds (JVM running for 7.54)
+24-03-24.20:17:06.110 [RMI TCP Connection(3)-192.168.152.91] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-24.20:17:06.110 [RMI TCP Connection(3)-192.168.152.91] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-24.20:17:06.112 [RMI TCP Connection(3)-192.168.152.91] INFO  DispatcherServlet      - Completed initialization in 2 ms
+24-03-24.20:17:06.215 [RMI TCP Connection(4)-192.168.152.91] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-03-24.20:17:07.478 [RMI TCP Connection(4)-192.168.152.91] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-03-24.20:18:00.669 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:19:27.949 [http-nio-7070-exec-1] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:114514 productId:1001
+24-03-24.20:19:28.646 [http-nio-7070-exec-1] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。openid: 114514 orderId: 060192321158 payUrl: http://www.luckysj.site/api/v1/sale/requestpay?payNo=060192321158
+24-03-24.20:19:28.647 [http-nio-7070-exec-1] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: 114514 productId: 1001 orderPay: PayOrderEntity{openid='114514', orderId='060192321158', payUrl='http://www.luckysj.site/api/v1/sale/requestpay?payNo=060192321158', payStatus=0: 等待支付}
+24-03-24.20:20:00.210 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，补货补偿，不存在待发货的订单
+24-03-24.20:20:00.308 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+24-03-24.20:21:00.232 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:21:00.250 [redisson-3-2    ] INFO  OrderPaySuccessRedisListener - 支付完成，开始发货。订单：060192321158
+24-03-24.20:21:00.920 [redisson-3-2    ] ERROR OrderPaySuccessRedisListener - 支付完成，发货失败。订单：060192321158
+java.lang.RuntimeException: updateOrderStatusDeliverGoodsCount update count is not equal 1
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository.deliverGoods(OrderRepository.java:138)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$FastClassBySpringCGLIB$$ec5142f2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$EnhancerBySpringCGLIB$$d1913275.deliverGoods(<generated>)
+	at com.luckysj.chatgpt.data.domain.order.service.OrderService.deliverGoods(OrderService.java:92)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:27)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:16)
+	at org.redisson.PubSubMessageListener.onMessage(PubSubMessageListener.java:79)
+	at org.redisson.client.RedisPubSubConnection.onMessage(RedisPubSubConnection.java:68)
+	at org.redisson.client.handler.CommandPubSubDecoder.lambda$enqueueMessage$2(CommandPubSubDecoder.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+24-03-24.20:24:00.198 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:25:13.953 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-03-24.20:25:14.756 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-03-24.20:25:15.039 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-03-24.20:25:15.372 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
+24-03-24.20:25:17.052 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.

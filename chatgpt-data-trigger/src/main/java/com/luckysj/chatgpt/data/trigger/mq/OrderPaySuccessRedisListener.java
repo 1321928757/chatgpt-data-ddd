@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * @author www.luckysj.top 刘仕杰
- * @description 支付完成后发货消息监听器
+ * @description 支付完成后发货消息监听器（Redisson）
  * @create 2023/12/17 22:12:22
  */
 @Slf4j

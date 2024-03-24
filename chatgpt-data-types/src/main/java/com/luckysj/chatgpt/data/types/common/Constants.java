@@ -23,4 +23,11 @@ public class Constants {
         private String info;
 
     }
+
+    public static class MessageQueueKey {
+        public static String DeliveryExchange = "chatgpt.quate.delivery.exchange";
+        public static String DeliveryQueue = "chatgpt.quate.delivery.queue";
+        public static String DeliveryKey = "chatgpt.quate.deliverye.key";
+    }
+
 }

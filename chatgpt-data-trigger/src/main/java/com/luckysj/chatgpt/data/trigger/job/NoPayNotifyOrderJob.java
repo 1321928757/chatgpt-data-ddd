@@ -9,9 +9,11 @@ import com.google.common.eventbus.EventBus;
 
 import com.luckysj.chatgpt.data.domain.order.model.valobj.AliPayTradeTypeVo;
 import com.luckysj.chatgpt.data.domain.order.service.IOrderService;
+import com.luckysj.chatgpt.data.types.common.Constants;
 import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RTopic;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -40,8 +42,11 @@ public class NoPayNotifyOrderJob {
     // @Resource
     // private EventBus eventBus;
 
-    @Resource(name = "delivery")
-    private RTopic redisTopic;
+    // @Resource(name = "delivery")
+    // private RTopic redisTopic;
+
+    @Resource
+    private RabbitTemplate rabbitTemplate;
 
     @Resource
     private AlipayClient alipayClient;
@@ -82,7 +87,8 @@ public class NoPayNotifyOrderJob {
                         if (isSuccess) {
                             // 发布消息
                             // eventBus.post(orderId);
-                            redisTopic.publish(orderId);
+                            // redisTopic.publish(orderId);
+                            rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
                         }
                     }
                 } else {

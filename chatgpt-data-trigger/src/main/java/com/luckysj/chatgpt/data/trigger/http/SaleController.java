@@ -22,6 +22,7 @@ import com.luckysj.chatgpt.data.types.model.Response;
 import com.luckysj.chatgpt.data.types.util.QRCodeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RTopic;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -54,8 +55,11 @@ public class SaleController {
     private AlipayClient alipayClient;
     // @Resource
     // private EventBus eventBus; //事件总线，用来发布消息
-    @Resource(name = "delivery")
-    private RTopic redisTopic;
+    // @Resource(name = "delivery")
+    // private RTopic redisTopic;
+
+    @Resource
+    private RabbitTemplate rabbitTemplate;
 
     /**
     * @description 查询商品列表
@@ -216,11 +220,9 @@ public class SaleController {
 
         try {
             log.info("开始处理支付宝支付通知");
-
             // 验签
             boolean verify_result = AlipaySignature.rsaCheckV1(params, aliPayConfig.getALIPAY_PUBLIC_KEY(),
                     aliPayConfig.CHARSET, "RSA2");
-
             if(verify_result) {
                 // 验签成功
                 // 商户订单号
@@ -247,7 +249,9 @@ public class SaleController {
                     // 发布发货消息
                     if(isSuccess){
                         // eventBus.post(orderId);
-                        redisTopic.publish(orderId);
+                        // redisTopic.publish(orderId);
+                        // orderService.publishDeliveryMessage(orderId);
+                        rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
                     }
                 } else if (AliPayTradeTypeVo.TRADE_FINISHED.getCode().equals(trade_status)) {
                     // 交易结束，不可退款。

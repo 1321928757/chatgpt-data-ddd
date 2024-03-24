@@ -12,6 +12,8 @@ import com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO;
 import com.luckysj.chatgpt.data.infrastructure.po.OpenAIProductPO;
 import com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO;
 import com.luckysj.chatgpt.data.types.enums.OpenAIProductEnableModel;
+
+import com.luckysj.chatgpt.data.types.exception.ChatGPTException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -31,7 +33,6 @@ public class OrderRepository implements IOrderRepository {
     private IOpenAIProductDao openAIProductDao;
     @Resource
     private IUserAccountDao userAccountDao;
-
     @Override
     public UnpaidOrderEntity queryUnpaidOrder(ShopCartEntity shopCartEntity) {
         OpenAIOrderPO openAIOrderPOReq = new OpenAIOrderPO();
@@ -135,7 +136,7 @@ public class OrderRepository implements IOrderRepository {
 
         // 1. 变更发货状态
         int updateOrderStatusDeliverGoodsCount = openAIOrderDao.updateOrderStatusDeliverGoods(orderId);
-        if (1 != updateOrderStatusDeliverGoodsCount) throw new RuntimeException("updateOrderStatusDeliverGoodsCount update count is not equal 1");
+        if (0 == updateOrderStatusDeliverGoodsCount) throw new ChatGPTException("updateOrderStatusDeliverGoodsCount update count is not equal 1");
 
         // 2. 账户额度变更
         UserAccountPO userAccountPO = userAccountDao.queryUserAccount(openAIOrderPO.getOpenid());
@@ -185,5 +186,10 @@ public class OrderRepository implements IOrderRepository {
             productEntityList.add(productEntity);
         }
         return productEntityList;
+    }
+
+    @Override
+    public void publishDeliveryMessage(String orderId) {
+
     }
 }

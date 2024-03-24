@@ -123,4 +123,9 @@ public class OrderService extends AbstractOrderService {
         return null;
     }
 
+    @Override
+    public void publishDeliveryMessage(String orderId) {
+        orderRepository.publishDeliveryMessage(orderId);
+    }
+
 }

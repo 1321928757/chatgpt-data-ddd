@@ -3,7 +3,6 @@ package com.luckysj.chatgpt.data.domain.auth.service;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.google.common.cache.Cache;
 import com.luckysj.chatgpt.data.domain.auth.model.entity.AuthStateEntity;
 import com.luckysj.chatgpt.data.domain.auth.model.valobj.AuthTypeVo;
 import com.luckysj.chatgpt.data.domain.auth.repository.IAuthRepository;
@@ -14,8 +13,6 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -35,9 +32,6 @@ public abstract class AbstractAuthService implements IAuthService{
     /**Base64编码的密钥*/
     private final String base64EncodedSecretKey = Base64.encodeBase64String(defaultBase64EncodedSecretKey.getBytes());
     private final Algorithm algorithm = Algorithm.HMAC256(Base64.decodeBase64(Base64.encodeBase64String(defaultBase64EncodedSecretKey.getBytes())));
-
-    @Resource
-    private Cache<String, String> codeCache;
 
     @Resource
     private IAuthRepository iAuthRepository;

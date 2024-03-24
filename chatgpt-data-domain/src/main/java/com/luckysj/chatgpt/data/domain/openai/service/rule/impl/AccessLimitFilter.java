@@ -1,6 +1,5 @@
 package com.luckysj.chatgpt.data.domain.openai.service.rule.impl;
 
-import com.google.common.cache.Cache;
 import com.luckysj.chatgpt.data.domain.openai.annotation.LogicStrategy;
 import com.luckysj.chatgpt.data.domain.openai.model.aggregates.ChatProcessAggregate;
 import com.luckysj.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
@@ -12,7 +11,6 @@ import com.luckysj.chatgpt.data.domain.openai.service.rule.factory.DefaultLogicF
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 

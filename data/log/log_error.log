@@ -1,13 +1,77 @@
-24-02-23.20:29:02.352 [http-nio-7070-exec-1] ERROR AbstractAuthService    - jwt isVerify Err
-com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2023-12-12T08:54:18Z.
+24-03-24.20:00:57.132 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'delivery' available
+24-03-24.20:00:57.276 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'delivery' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'delivery' in your configuration.
+
+24-03-24.20:02:12.667 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventBusListener' defined in class path resource [com/luckysj/chatgpt/data/config/GoogleGuavaCodeCacheConfig.class]: Unsatisfied dependency expressed through method 'eventBusListener' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+24-03-24.20:02:12.795 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method eventBusListener in com.luckysj.chatgpt.data.config.GoogleGuavaCodeCacheConfig required a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' in your configuration.
+
+24-03-24.20:03:55.483 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventBusListener' defined in class path resource [com/luckysj/chatgpt/data/config/GoogleGuavaCodeCacheConfig.class]: Unsatisfied dependency expressed through method 'eventBusListener' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+24-03-24.20:03:55.613 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method eventBusListener in com.luckysj.chatgpt.data.config.GoogleGuavaCodeCacheConfig required a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessListener' in your configuration.
+
+24-03-24.20:04:35.756 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.common.cache.Cache<java.lang.String, java.lang.String>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-24.20:04:35.780 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.google.common.cache.Cache' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.google.common.cache.Cache' in your configuration.
+
+24-03-24.20:12:34.813 [http-nio-7070-exec-5] ERROR AbstractAuthService    - jwt isVerify Err
+com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2024-03-02T09:45:37Z.
 	at com.auth0.jwt.JWTVerifier$BaseVerification.assertValidInstantClaim(JWTVerifier.java:346)
 	at com.auth0.jwt.JWTVerifier$BaseVerification.lambda$addMandatoryClaimChecks$17(JWTVerifier.java:308)
 	at com.auth0.jwt.JWTVerifier$BaseVerification$1.verify(JWTVerifier.java:405)
 	at com.auth0.jwt.JWTVerifier.verifyClaims(JWTVerifier.java:482)
 	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:464)
 	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:445)
-	at com.luckysj.chatgpt.data.domain.auth.service.AbstractAuthService.isVerify(AbstractAuthService.java:136)
-	at com.luckysj.chatgpt.data.domain.auth.service.AuthService.checkToken(AuthService.java:56)
+	at com.luckysj.chatgpt.data.domain.auth.service.AbstractAuthService.isVerify(AbstractAuthService.java:130)
+	at com.luckysj.chatgpt.data.domain.auth.service.AuthService.checkToken(AuthService.java:54)
 	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:51)
 	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController$$FastClassBySpringCGLIB$$c8ae12f9.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
@@ -31,7 +95,7 @@ com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2023-12
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController$$EnhancerBySpringCGLIB$$f094b6b3.completionsStream(<generated>)
+	at com.luckysj.chatgpt.data.trigger.http.ChatGPTAIServiceController$$EnhancerBySpringCGLIB$$642aa329.completionsStream(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,4 +149,60 @@ com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2023-12
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-03-24.20:15:02.145 [redisson-3-2    ] ERROR OrderPaySuccessRedisListener - 支付完成，发货失败。订单：671796600081
+java.lang.RuntimeException: updateOrderStatusDeliverGoodsCount update count is not equal 1
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository.deliverGoods(OrderRepository.java:138)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$FastClassBySpringCGLIB$$ec5142f2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$EnhancerBySpringCGLIB$$9a1988a8.deliverGoods(<generated>)
+	at com.luckysj.chatgpt.data.domain.order.service.OrderService.deliverGoods(OrderService.java:92)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:27)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:16)
+	at org.redisson.PubSubMessageListener.onMessage(PubSubMessageListener.java:79)
+	at org.redisson.client.RedisPubSubConnection.onMessage(RedisPubSubConnection.java:68)
+	at org.redisson.client.handler.CommandPubSubDecoder.lambda$enqueueMessage$2(CommandPubSubDecoder.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+24-03-24.20:21:00.920 [redisson-3-2    ] ERROR OrderPaySuccessRedisListener - 支付完成，发货失败。订单：060192321158
+java.lang.RuntimeException: updateOrderStatusDeliverGoodsCount update count is not equal 1
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository.deliverGoods(OrderRepository.java:138)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$FastClassBySpringCGLIB$$ec5142f2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.luckysj.chatgpt.data.infrastructure.repository.OrderRepository$$EnhancerBySpringCGLIB$$d1913275.deliverGoods(<generated>)
+	at com.luckysj.chatgpt.data.domain.order.service.OrderService.deliverGoods(OrderService.java:92)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:27)
+	at com.luckysj.chatgpt.data.trigger.mq.OrderPaySuccessRedisListener.onMessage(OrderPaySuccessRedisListener.java:16)
+	at org.redisson.PubSubMessageListener.onMessage(PubSubMessageListener.java:79)
+	at org.redisson.client.RedisPubSubConnection.onMessage(RedisPubSubConnection.java:68)
+	at org.redisson.client.handler.CommandPubSubDecoder.lambda$enqueueMessage$2(CommandPubSubDecoder.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)

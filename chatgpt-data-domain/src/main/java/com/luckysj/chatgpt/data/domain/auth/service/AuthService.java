@@ -1,18 +1,14 @@
 package com.luckysj.chatgpt.data.domain.auth.service;
 
-import com.google.common.cache.Cache;
 import com.luckysj.chatgpt.data.domain.auth.model.entity.AuthStateEntity;
 import com.luckysj.chatgpt.data.domain.auth.model.valobj.AuthTypeVo;
 import com.luckysj.chatgpt.data.domain.auth.repository.IAuthRepository;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author www.luckysj.top 刘仕杰

@@ -78,4 +78,11 @@ public interface IOrderService {
      * @param params 本次通知结果的相关信息
      */
     String receiveNotify(Map<String, String> params);
+
+    /**
+     * 发布
+     *
+     * @param orderId 订单ID
+     */
+    void publishDeliveryMessage(String orderId);
 }
