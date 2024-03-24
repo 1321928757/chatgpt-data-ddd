@@ -354,3 +354,41 @@ java.lang.RuntimeException: updateOrderStatusDeliverGoodsCount update count is n
 24-03-24.20:25:15.039 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
 24-03-24.20:25:15.372 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
 24-03-24.20:25:17.052 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
+24-03-24.20:25:22.855 [main            ] INFO  Application            - Starting Application using Java 1.8.0_361 on DESKTOP-BU4MLU6 with PID 24924 (D:\IDEA_project\chatgpt-data - 副本\chatgpt-data-app\target\classes started by kitie in D:\IDEA_project\chatgpt-data - 副本)
+24-03-24.20:25:22.856 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-24.20:25:23.484 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-24.20:25:23.486 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-24.20:25:23.518 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-03-24.20:25:24.063 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 7070 (http)
+24-03-24.20:25:24.069 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-7070"]
+24-03-24.20:25:24.069 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-24.20:25:24.069 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-24.20:25:24.176 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-24.20:25:24.176 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1297 ms
+24-03-24.20:25:24.596 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-24.20:25:25.473 [redisson-netty-2-7] INFO  MasterPubSubConnectionPool - 1 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:25:26.062 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 154.12.27.76/154.12.27.76:6379
+24-03-24.20:25:27.685 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-24.20:25:27.749 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-7070"]
+24-03-24.20:25:27.755 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 7070 (http) with context path ''
+24-03-24.20:25:27.757 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [154.201.80.213:5672]
+24-03-24.20:25:28.147 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c4f4330:0/SimpleConnection@5d93ff21 [delegate=amqp://admin@154.201.80.213:5672/, localPort= 59267]
+24-03-24.20:25:29.560 [main            ] INFO  Application            - Started Application in 6.986 seconds (JVM running for 7.747)
+24-03-24.20:25:29.890 [RMI TCP Connection(1)-192.168.152.91] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-24.20:25:29.890 [RMI TCP Connection(1)-192.168.152.91] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-24.20:25:29.892 [RMI TCP Connection(1)-192.168.152.91] INFO  DispatcherServlet      - Completed initialization in 2 ms
+24-03-24.20:25:30.585 [RMI TCP Connection(3)-192.168.152.91] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-03-24.20:25:31.819 [RMI TCP Connection(3)-192.168.152.91] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-03-24.20:25:34.825 [http-nio-7070-exec-2] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-03-24.20:25:35.608 [http-nio-7070-exec-3] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:114514 productId:1001
+24-03-24.20:25:36.205 [http-nio-7070-exec-3] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。openid: 114514 orderId: 819294273773 payUrl: http://www.luckysj.site/api/v1/sale/requestpay?payNo=819294273773
+24-03-24.20:25:36.205 [http-nio-7070-exec-3] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: 114514 productId: 1001 orderPay: PayOrderEntity{openid='114514', orderId='819294273773', payUrl='http://www.luckysj.site/api/v1/sale/requestpay?payNo=819294273773', payStatus=0: 等待支付}
+24-03-24.20:27:00.711 [scheduling-1    ] INFO  err                    - Summary^_^10000^_^null^_^ProtocalMustParams:charset=UTF-8&method=alipay.trade.query&sign=BLmeZcEReWZmyoW6rNqqfZ5S3M6TolLlo92u2NriI7uKyDOD7MBlMzE0y0SJkMhjM1BLrIiGHQy7OLsXqztub3v5SZ+7/nzmyxySSzructxAO/MU9okqBW1D8/m9BorsQhHZPeLt4HjVpfEgmnePnYLYHF7+1YcWlwUKq+bXbb6zcS9WXq3YSje8W1tsoyjTDAtXmb+bk/AlPMD7hhRnnrkQU5GBDdD1qNzLZKctb/j9jNs3l2C5Ux4QNegKVJW7tQ8SaWEa/Y2FRQ/hd6+jvtDqsTRQBEvzTgwh1fLn/aE0FAcc6SQszOxMTzHKOXTgpvDmjOACGMb0Qh91i4f9MA==&version=1.0&app_id=9021000132630832&sign_type=RSA2&timestamp=2024-03-24 20:27:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.7.73.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"819294273773"}^_^18ms,484ms,14ms
+24-03-24.20:27:00.714 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，查询支付结果查询成功，支付状态为TRADE_SUCCESS，orderId is 819294273773
+24-03-24.20:27:01.137 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  OrderPaySuccessMqListener - 发货消息开始消费，订单ID：819294273773
+24-03-24.20:27:01.897 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  OrderPaySuccessMqListener - 发货消息消费完成，订单ID：819294273773
+24-03-24.20:30:00.173 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:30:00.304 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，补货补偿，不存在待发货的订单
+24-03-24.20:30:00.402 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+24-03-24.20:33:00.171 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
+24-03-24.20:36:00.221 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新，暂无未更新订单 orderId is null
