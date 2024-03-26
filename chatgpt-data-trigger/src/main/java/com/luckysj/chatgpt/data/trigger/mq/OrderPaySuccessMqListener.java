@@ -30,7 +30,6 @@ public class OrderPaySuccessMqListener {
         final long deliveryTag = message.getMessageProperties().getDeliveryTag();
         try {
             log.info("发货消息开始消费，订单ID：{}", orderId);
-
             // 消费消息
             orderService.deliverGoods(orderId);
 

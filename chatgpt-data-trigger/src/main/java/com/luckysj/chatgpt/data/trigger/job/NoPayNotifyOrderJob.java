@@ -88,7 +88,8 @@ public class NoPayNotifyOrderJob {
                             // 发布消息
                             // eventBus.post(orderId);
                             // redisTopic.publish(orderId);
-                            rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
+                            // rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
+                            orderService.publishDeliveryMessage(orderId); //发布发货消息
                         }
                     }
                 } else {

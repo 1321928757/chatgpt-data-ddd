@@ -21,10 +21,19 @@ app:
 
 # 数据库配置；SpringBoot 默认连接池为 HikariDataSource
 spring:
+  # RabbitMQ 配置
+  rabbitmq:
+    addresses: 154.12123
+    port: 5672
+    username: admin
+    password: 123123
+    listener:
+      simple:
+        prefetch: 1 # 每次投递n个消息，消费完在投递n个
   datasource:
     username: root
     password: 123123
-    url: jdbc:mysql://123123:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+    url: jdbc:mysql://154.12.123:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       pool-name: Retail_HikariCP
@@ -45,7 +54,7 @@ mybatis:
 redis:
   sdk:
     config:
-      host: 123123
+      host: localhost
       port: 6379
       password: 123123
       pool-size: 10
@@ -78,9 +87,9 @@ chatgpt:
 #      api-host: https://api.openai.com/
       api-host: https://chatapi.a3e.top/
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: sk-cRdJvyqAGsmO4cal582a4591090d49C6818dEe0768FaCd41
+      api-key: sk-123123
       # 认证token，这个配置暂时没用到，假如自己搭建了gpt的代理转发地址，而不想让这代理网站公开使用，就可以加一层token校验，限制使用
-      auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+      auth-token: 123213.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
 
 # ChatGLM SDK Config
 chatglm:
@@ -91,23 +100,24 @@ chatglm:
       # 官网地址
       api-host: https://open.bigmodel.cn/
       # 官网申请 https://open.bigmodel.cn/usercenter/apikeys - 自己可申请
-      api-secret-key: 8b3782333a21610fd6354bebc865bc40.BKTo7dCYql1Opu20
+      api-secret-key: 123123.BKTo7dCYql1Opu20
 
 #支付宝支付配置（需要到支付宝沙盒控制台查看）
 pay:
   alipay:
     # 支付宝沙盒环境appid
-    app_id: 123123
+    app_id: 9021000132630832
     # 支付宝沙盒环境应用密钥
-    app_private_key: 123213G9w0BAQEFAASCBKcwggSjAgEAAoIBAQDw3jyqCp8TkAMDFl/bqj6IUsuVACwNx9jfLALQkKY06iGEUpVLmxsAIa7Ir7VC1HFpdfRgE4uezyFAmoebZAD7MDA4W4VLyfrY43IKpQN6rnB2N476nN8TLCfdLsgp2pl86YZbiBm4rDMl+BkIiT55TxRcE3Ykd5/ZhNUgD7gaPDmSti1dyZ7DHPu6wmk8tFZvjRG04gn+gPigfY+xC+fXtVYAuNxMTyFkrekutmE85inxDx1MwIkwSKl3PCRn1bF5MrtjtXXJxcyIWxEAjRbZsv/TlLkZR0nDhgWKaTkaA0vdFz7xtXteUdvqGyvA0WYpSXc2OUozv1gUnRpHoUYVAgMBAAECggEAf5O2XfoyN5JXhhMbwqVxaZMw8UKeEs5/N/V/qCh1YCGCjyuOl/UXYAJ3KSSnxTXwvAMV5K11ji/3VNiEavGU83aak78l4vagPrB5ftnX9ere9j6HJIZiQS1qD+Tvb/uwwFCQMXrs5LuQe9PkrnjC9k3EYuCL+tTBfdy1Zb3trTah2sA1P1+LOKGisDTcKpGUqBYhYrL+sbyXEIhA9WO3EabKrlwRsVItJ/bmOph0A2B9xXt1y6mx99xK+z9/AC8J24Ku9owtY0vbX+Vd3fZBcyeRCVjdWnzlS4eqIiuUAnI27sl7PaENYsjcLf4SHatBubkoDFZw0MILWGto3c6pIQKBgQD479o8Obv02kKNcUs+BiF442WX86y+nDL3G/D2clrtzgKpVQmQGAH7BtN/nwVf+xcdj+h66WFaR6I0H2DTNSapoxY+EWgeXNF1DnkaOqaOYXCyiCEFN6GF7vjVMnhCRhGk5H5EagkZBJ+LGIev/jmdi6sxnfEeAl69bQpxwxR1FwKBgQD3s8bhCXfYGuiB3H8K4rFQpMupPlB7q3/LuzAijgL0GSvyMYFlPUy/g6RhwyYhNOnigS2/xspJCMJJCanq9CiOGd5YM5lc+bf+p12z9fR2HEVWyXYhmKXxjU1eSnJ7ajq+Jo4qrisnBv3m7CscrxVW8gaSBJ3cfXdJ7LrT36YxswKBgGMPFvnGQ6wQulEMl1NsHx+65W+NEN2czI8WuFFpehONWfPGGhMT6p3YvorXXc0u3qjt3iYi/pFtVfeF0QLa8LKqaixywsrqRpNdGgW89xBLaAwzLWilFYp1aOF1vvMobNb/8dsJkus4ssAoF76J3KV7sbkBz7QQX2DjpjdU2KwrAoGAI59eHaTv8EtGXs6oEpexamiYxXkpt+9dDJ6Z+I41zIcGM+l8s2OScwRqkoivJh1m+WUcgDUFiGVTE4/pONnuLyl3OXYKOz3KgTvulN/tTUMZkbadX42FZ+yrUMEiH6+STSBcV7T+jblKsHgMZy6iwgNCgKNbVIdSrXX3FFtYmlMCgYEA796pLzYwnwiM13ejNMqS0HwuBqP1ZshlvdOt/Qxy6YVKhyPzHgDs5zPwNq045gkdxJBKeXHxqcvOpCuXJb4FIFS/OVWupuUiU+a/MIqEE9XEsMhZ7XyEt46TAstnrf4gMK+n1ELRm7tjMCzUHlrISbo+w72rwizKsv09JHqXc7Y=
+    app_private_key: 123123/bqj6IUsuVACwNx9jfLALQkKY06iGEUpVLmxsAIa7Ir7VC1HFpdfRgE4uezyFAmoebZAD7MDA4W4VLyfrY43IKpQN6rnB2N476nN8TLCfdLsgp2pl86YZbiBm4rDMl+BkIiT55TxRcE3Ykd5/ZhNUgD7gaPDmSti1dyZ7DHPu6wmk8tFZvjRG04gn+gPigfY+xC+fXtVYAuNxMTyFkrekutmE85inxDx1MwIkwSKl3PCRn1bF5MrtjtXXJxcyIWxEAjRbZsv/TlLkZR0nDhgWKaTkaA0vdFz7xtXteUdvqGyvA0WYpSXc2OUozv1gUnRpHoUYVAgMBAAECggEAf5O2XfoyN5JXhhMbwqVxaZMw8UKeEs5/N/V/qCh1YCGCjyuOl/UXYAJ3KSSnxTXwvAMV5K11ji/3VNiEavGU83aak78l4vagPrB5ftnX9ere9j6HJIZiQS1qD+Tvb/uwwFCQMXrs5LuQe9PkrnjC9k3EYuCL+tTBfdy1Zb3trTah2sA1P1+LOKGisDTcKpGUqBYhYrL+sbyXEIhA9WO3EabKrlwRsVItJ/bmOph0A2B9xXt1y6mx99xK+z9/AC8J24Ku9owtY0vbX+Vd3fZBcyeRCVjdWnzlS4eqIiuUAnI27sl7PaENYsjcLf4SHatBubkoDFZw0MILWGto3c6pIQKBgQD479o8Obv02kKNcUs+BiF442WX86y+nDL3G/D2clrtzgKpVQmQGAH7BtN/nwVf+xcdj+h66WFaR6I0H2DTNSapoxY+EWgeXNF1DnkaOqaOYXCyiCEFN6GF7vjVMnhCRhGk5H5EagkZBJ+LGIev/jmdi6sxnfEeAl69bQpxwxR1FwKBgQD3s8bhCXfYGuiB3H8K4rFQpMupPlB7q3/LuzAijgL0GSvyMYFlPUy/g6RhwyYhNOnigS2/xspJCMJJCanq9CiOGd5YM5lc+bf+p12z9fR2HEVWyXYhmKXxjU1eSnJ7ajq+Jo4qrisnBv3m7CscrxVW8gaSBJ3cfXdJ7LrT36YxswKBgGMPFvnGQ6wQulEMl1NsHx+65W+NEN2czI8WuFFpehONWfPGGhMT6p3YvorXXc0u3qjt3iYi/pFtVfeF0QLa8LKqaixywsrqRpNdGgW89xBLaAwzLWilFYp1aOF1vvMobNb/8dsJkus4ssAoF76J3KV7sbkBz7QQX2DjpjdU2KwrAoGAI59eHaTv8EtGXs6oEpexamiYxXkpt+9dDJ6Z+I41zIcGM+l8s2OScwRqkoivJh1m+WUcgDUFiGVTE4/pONnuLyl3OXYKOz3KgTvulN/tTUMZkbadX42FZ+yrUMEiH6+STSBcV7T+jblKsHgMZy6iwgNCgKNbVIdSrXX3FFtYmlMCgYEA796pLzYwnwiM13ejNMqS0HwuBqP1ZshlvdOt/Qxy6YVKhyPzHgDs5zPwNq045gkdxJBKeXHxqcvOpCuXJb4FIFS/OVWupuUiU+a/MIqEE9XEsMhZ7XyEt46TAstnrf4gMK+n1ELRm7tjMCzUHlrISbo+w72rwizKsv09JHqXc7Y=
     # 支付宝公钥
-    alipay_public_key: 123123hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRQHhyiF6i/7NDjy1J11+NIPdjIXDQqHuWeA1Q+kKp/GH6IgxfMTICF9C94hagvIF51GG3r+Iji9Xv0DmEBKgCIdn9YnmczIxL2SMZoJdqIoQufh5Ai/z2uzLln64SNtxIaliYNNPg0R1gmzQVL4jL7/ksAoH+ZUaIBs7p1gVCJdZFfO9anx3Obggw8z8yMH4dFN6exXhOLbfnLQj9TeoDaGYs0GQMmtlo2DcBpH1lA92ORw87yYmpiqld0qiCEUqEk0UkbcKSy665NJHPX7pa9pkTFLkWW0w4pYyBj+6W0hXnrK+Gwe5QFGGfUsG9VgQfMUIe7zOI7VU+Pfn4sh5QIDAQAB
+    alipay_public_key: 123123/7NDjy1J11+NIPdjIXDQqHuWeA1Q+kKp/GH6IgxfMTICF9C94hagvIF51GG3r+Iji9Xv0DmEBKgCIdn9YnmczIxL2SMZoJdqIoQufh5Ai/z2uzLln64SNtxIaliYNNPg0R1gmzQVL4jL7/ksAoH+ZUaIBs7p1gVCJdZFfO9anx3Obggw8z8yMH4dFN6exXhOLbfnLQj9TeoDaGYs0GQMmtlo2DcBpH1lA92ORw87yYmpiqld0qiCEUqEk0UkbcKSy665NJHPX7pa9pkTFLkWW0w4pYyBj+6W0hXnrK+Gwe5QFGGfUsG9VgQfMUIe7zOI7VU+Pfn4sh5QIDAQAB
     # 支付宝网关地址
     url: https://openapi-sandbox.dl.alipaydev.com/gateway.do
     # 二维码的跳转地址，这里指向我们的支付接口
     qrcode_url: http://www.luckysj.site/api/v1/sale/requestpay?payNo=%s
     # 支付宝支付结果通知地址,luckysj.natapp1.cc为内网穿透地址
     notify_url: http://www.luckysj.site/api/v1/sale/paynotify
+
 
 # 微信公众号配置信息
 # originalid：原始ID

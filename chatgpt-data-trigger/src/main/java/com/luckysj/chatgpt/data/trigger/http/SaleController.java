@@ -57,9 +57,8 @@ public class SaleController {
     // private EventBus eventBus; //事件总线，用来发布消息
     // @Resource(name = "delivery")
     // private RTopic redisTopic;
-
-    @Resource
-    private RabbitTemplate rabbitTemplate;
+    // @Resource
+    // private RabbitTemplate rabbitTemplate;
 
     /**
     * @description 查询商品列表
@@ -251,7 +250,8 @@ public class SaleController {
                         // eventBus.post(orderId);
                         // redisTopic.publish(orderId);
                         // orderService.publishDeliveryMessage(orderId);
-                        rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
+                        // rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
+                        orderService.publishDeliveryMessage(orderId); //发布发货消息
                     }
                 } else if (AliPayTradeTypeVo.TRADE_FINISHED.getCode().equals(trade_status)) {
                     // 交易结束，不可退款。

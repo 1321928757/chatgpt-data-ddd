@@ -11,9 +11,11 @@ import com.luckysj.chatgpt.data.infrastructure.dao.IUserAccountDao;
 import com.luckysj.chatgpt.data.infrastructure.po.OpenAIOrderPO;
 import com.luckysj.chatgpt.data.infrastructure.po.OpenAIProductPO;
 import com.luckysj.chatgpt.data.infrastructure.po.UserAccountPO;
+import com.luckysj.chatgpt.data.types.common.Constants;
 import com.luckysj.chatgpt.data.types.enums.OpenAIProductEnableModel;
 
 import com.luckysj.chatgpt.data.types.exception.ChatGPTException;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -33,6 +35,8 @@ public class OrderRepository implements IOrderRepository {
     private IOpenAIProductDao openAIProductDao;
     @Resource
     private IUserAccountDao userAccountDao;
+    @Resource
+    private RabbitTemplate rabbitTemplate;
     @Override
     public UnpaidOrderEntity queryUnpaidOrder(ShopCartEntity shopCartEntity) {
         OpenAIOrderPO openAIOrderPOReq = new OpenAIOrderPO();
@@ -190,6 +194,6 @@ public class OrderRepository implements IOrderRepository {
 
     @Override
     public void publishDeliveryMessage(String orderId) {
-
+        rabbitTemplate.convertAndSend(Constants.MessageQueueKey.DeliveryExchange, Constants.MessageQueueKey.DeliveryKey, orderId);
     }
 }
